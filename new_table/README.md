@@ -52,15 +52,11 @@ SQL Error [497] [07000]: Code: 497. DB::Exception: <...>: Not enough privileges.
 
 
 CREATE TABLE dt
-
 (
-
     tm DateTime('Europe/Moscow'),
     
     dt_str String
-    
 )
-
 ENGINE = Log;
 
 
