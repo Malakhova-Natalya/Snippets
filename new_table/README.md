@@ -26,7 +26,7 @@ SQL Error [497] [07000]: Code: 497. DB::Exception: <...>: Not enough privileges.
 **Описание**: обойти ограничения прав помогает этот [способ](https://forum.goodt.me/t/zagruzka-csv-fajlov-v-postgres-s-pomoshhyu-dbeaver-shag-za-shagom/165)
 
 **Шаги**:
-  - БД -> схема -> "Таблицы" -> "Импорт данных"
+  - БД -> схема -> правой кнопкой мыши "Таблицы" -> "Импорт данных"
 
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/new_table/04%20-%20DBeaver%20импорт%20данных.png)
   - исходный формат - csv
@@ -35,7 +35,7 @@ SQL Error [497] [07000]: Code: 497. DB::Exception: <...>: Not enough privileges.
   - выбрать входной файл
 
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/new_table/06%20-%20DBeaver%20импорт%20данных%2002%20входные%20файлы.png)
-  - соответствие столбцов - можно по умолчанию, можно изменить формат в Configure
+  - соответствие столбцов - можно по умолчанию, можно изменить формат данных в столбцах в Configure
  
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/new_table/07%20-%20DBeaver%20импорт%20данных%2003%20соответствие%20столбцов.png)
   - настройки загрузки данных - можно по умолчанию
