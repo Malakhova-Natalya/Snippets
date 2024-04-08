@@ -21,7 +21,7 @@
 
 		SQL Error [497] [07000]: Code: 497. DB::Exception: <...>: Not enough privileges. To execute this query it's necessary to have grant CREATE TEMPORARY TABLE, URL ON *.*. (ACCESS_DENIED)
   
-(Тут ошибка с тем, что у пользователя нет прав именно на загрузку из url)
+Тут ошибка с тем, что у пользователя нет прав именно на загрузку из url. Однако это не смертельно, и чтобы справиться с задачей, рассмотрим второй способ.
 
 ### Сценарий 2: импорт данных через DBeaver
 
