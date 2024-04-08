@@ -51,13 +51,13 @@ SQL Error [497] [07000]: Code: 497. DB::Exception: <...>: Not enough privileges.
 **Шаги**:
 
 
-CREATE TABLE dt
-(
-    tm DateTime('Europe/Moscow'),
+	CREATE TABLE dt
+	(
+  	  tm DateTime('Europe/Moscow'),
     
-    dt_str String
-)
-ENGINE = Log;
+   	 dt_str String
+	)
+	ENGINE = Log;
 
 
 Наполним ее данными:
