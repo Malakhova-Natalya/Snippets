@@ -26,7 +26,7 @@ SQL Error [497] [07000]: Code: 497. DB::Exception: <...>: Not enough privileges.
 
 ### Сценарий 2: импорт данных через DBeaver
 
-**Описание**: обойти ограничения прав помогает этот способ [ссылка](https://forum.goodt.me/t/zagruzka-csv-fajlov-v-postgres-s-pomoshhyu-dbeaver-shag-za-shagom/165)
+**Описание**: обойти ограничения прав помогает этот [способ](https://forum.goodt.me/t/zagruzka-csv-fajlov-v-postgres-s-pomoshhyu-dbeaver-shag-za-shagom/165)
 
 **Шаги**:
   - БД -> схема -> "Таблицы" -> "Импорт данных"
