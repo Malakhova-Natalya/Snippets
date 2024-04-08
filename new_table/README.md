@@ -55,19 +55,19 @@
 - создаём таблицу:
 
 
-	CREATE TABLE dt
-	(
-  	    tm DateTime('Europe/Moscow'),
+		CREATE TABLE dt
+		(
+  		    tm DateTime('Europe/Moscow'),
     
-   	    dt_str String
-	)
-	ENGINE = Log;
+   		    dt_str String
+		)
+		ENGINE = Log;
 
 
 - наполняем её данными:
 
 
 
-	INSERT INTO dt VALUES (1580518861, 'Wed, 01 Jan 2020 01:01:01 GMT'), 
+		INSERT INTO dt VALUES (1580518861, 'Wed, 01 Jan 2020 01:01:01 GMT'), 
 
-                      	      ('2020-02-01 01:01:01', 'Sat, 01 Feb 2020 01:01:01 GMT');
+              	        	      ('2020-02-01 01:01:01', 'Sat, 01 Feb 2020 01:01:01 GMT');
