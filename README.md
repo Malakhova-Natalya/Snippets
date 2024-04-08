@@ -30,13 +30,18 @@ SQL Error [497] [07000]: Code: 497. DB::Exception: <...>: Not enough privileges.
 
 **Шаги**:
   - БД -> схема -> "Таблицы" -> "Импорт данных"
+
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/04%20-%20DBeaver%20импорт%20данных.png)
   - исходный формат - csv
+
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/05%20-%20DBeaver%20импорт%20данных%2001%20исходный%20формат.png)
   - выбрать входные файлы
+
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/06%20-%20DBeaver%20импорт%20данных%2002%20входные%20файлы.png)
-  - соответствие столбцов - можно по умолчанию
+  - соответствие столбцов - можно по умолчанию, можно изменить формат в Configure
+ 
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/07%20-%20DBeaver%20импорт%20данных%2003%20соответствие%20столбцов.png)
   - настройки загрузки данных - можно по умолчанию
+
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/08%20-%20DBeaver%20импорт%20данных%2004%20настройки%20загрузки%20данных.png)
 
