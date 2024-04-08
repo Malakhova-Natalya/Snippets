@@ -5,4 +5,5 @@
 ### Сценарий 1: url
   - сохраняем нужные данные в формате csv
   - добавляем файл csv, например, на гитхаб
-  - 
+  - открываем этот файл - он должен выглядеть, например, так:
+    ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/01%20-%20csv.png)
