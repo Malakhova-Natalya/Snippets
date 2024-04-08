@@ -14,11 +14,11 @@
     ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/new_table/02%20-%20csv_raw.png)
   - отсюда надо скопировать ссылку из адресной строки наверху (всю целиком, вместе с .csv на конце, если оно есть)
   - далее переходим в DBeaver -> Редактор SQL -> Новый редактор SQL (для нужной БД)
-  - пишем и последовательно выполняем скрипт из двух частей: создание таблицы, наполнение её данными
-	Например, вот так: [скрипт создания и наполнения таблицы](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/new_table/03%20-%20script.txt)
+  - пишем и последовательно выполняем скрипт из двух частей: создание таблицы, наполнение её данными. В этом скрипте нам пригодится ссылка из предыдущего шага.
+	Скрипт должен быть, например, таким: [скрипт создания и наполнения таблицы](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/new_table/03%20-%20script.txt)
 
 Однако, если это рабочая задача, у БД могут быть ограничения прав. Поэтому может быть ошибка, например: 
-SQL Error [497] [07000]: Code: 497. DB::Exception: <...>: Not enough privileges. To execute this query it's necessary to have grant CREATE TEMPORARY TABLE, URL ON *.*. (ACCESS_DENIED)
+		SQL Error [497] [07000]: Code: 497. DB::Exception: <...>: Not enough privileges. To execute this query it's necessary to have grant CREATE TEMPORARY TABLE, URL ON *.*. (ACCESS_DENIED)
 (Тут ошибка с тем, что у пользователя нет прав именно на загрузку из url)
 
 ### Сценарий 2: импорт данных через DBeaver
