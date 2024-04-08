@@ -11,3 +11,6 @@
 
     ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/01%20-%20csv.png)
   - в верхнем правом углу переходим в режим сырых данных - нажимаем Raw
+  - в результате получим что-то в таком духе:
+    ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/02%20-%20csv_raw.png)
+  - отсюда надо скопировать ссылку из адресной строки наверху (всю целиком, вместе с .csv на конце, если оно есть)
