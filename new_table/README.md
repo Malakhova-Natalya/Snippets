@@ -53,6 +53,7 @@
 **Шаги**:
 
 - создаём таблицу:
+- 
 	CREATE TABLE dt
 	(
   	    tm DateTime('Europe/Moscow'),
@@ -63,7 +64,6 @@
 
 
 - наполняем её данными:
-
 
 	INSERT INTO dt VALUES (1580518861, 'Wed, 01 Jan 2020 01:01:01 GMT'), 
 
