@@ -14,3 +14,29 @@
   - в результате получим что-то в таком духе:
     ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/02%20-%20csv_raw.png)
   - отсюда надо скопировать ссылку из адресной строки наверху (всю целиком, вместе с .csv на конце, если оно есть)
+  - далее переходим в DBeaver -> Редактор SQL -> Новый редактор SQL (для нужной БД)
+  - пишем и последовательно выполняем скрипт из двух частей: создание таблицы, наполнение её данными
+Например, вот так:
+
+    CREATE TABLE default.`regions_and_cities` 
+(
+	`city_rus` String, 
+	`region_rus` LowCardinality(String), 
+	`city_eng` String, 
+	`region_eng` LowCardinality(String),
+	`region_ISO_code` LowCardinality(String)
+)
+ENGINE = MergeTree()
+ORDER BY city_rus;
+
+
+INSERT INTO default.regions_and_cities
+SELECT * FROM url(
+'https://raw.githubusercontent.com/Malakhova-Natalya/My_hints/main/regions_and_cities.csv', 
+CSVWithNames, 
+'city_rus String, 
+region_rus LowCardinality(String), 
+city_eng String, 
+region_eng LowCardinality(String),
+region_ISO_code LowCardinality(String)'
+);
