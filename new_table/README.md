@@ -50,6 +50,7 @@ SQL Error [497] [07000]: Code: 497. DB::Exception: <...>: Not enough privileges.
 
 **Шаги**:
 
+
 CREATE TABLE dt
 
 (
@@ -62,7 +63,9 @@ CREATE TABLE dt
 
 ENGINE = Log;
 
+
 Наполним ее данными:
+
 
 INSERT INTO dt VALUES (1580518861, 'Wed, 01 Jan 2020 01:01:01 GMT'), 
 
