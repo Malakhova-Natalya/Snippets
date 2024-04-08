@@ -24,4 +24,6 @@
 SQL Error [497] [07000]: Code: 497. DB::Exception: <...>: Not enough privileges. To execute this query it's necessary to have grant CREATE TEMPORARY TABLE, URL ON *.*. (ACCESS_DENIED)
 (Тут ошибка с тем, что у пользователя нет прав именно на загрузку из url)
 
-
+### Сценарий 2: импорт данных через DBeaver
+**Шаги**:
+  - https://forum.goodt.me/t/zagruzka-csv-fajlov-v-postgres-s-pomoshhyu-dbeaver-shag-za-shagom/165
