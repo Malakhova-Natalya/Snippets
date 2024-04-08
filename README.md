@@ -35,7 +35,7 @@ SQL Error [497] [07000]: Code: 497. DB::Exception: <...>: Not enough privileges.
   - исходный формат - csv
 
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/05%20-%20DBeaver%20импорт%20данных%2001%20исходный%20формат.png)
-  - выбрать входные файлы
+  - выбрать входной файл
 
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/06%20-%20DBeaver%20импорт%20данных%2002%20входные%20файлы.png)
   - соответствие столбцов - можно по умолчанию, можно изменить формат в Configure
