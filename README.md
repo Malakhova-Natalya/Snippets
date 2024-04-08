@@ -20,5 +20,8 @@
   - пишем и последовательно выполняем скрипт из двух частей: создание таблицы, наполнение её данными
 	Например, вот так: [скрипт создания и наполнения таблицы](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/03%20-%20script.txt)
 
+Однако, если это рабочая задача, у БД могут быть ограничения прав. Поэтому может быть ошибка, например: 
+SQL Error [497] [07000]: Code: 497. DB::Exception: <...>: Not enough privileges. To execute this query it's necessary to have grant CREATE TEMPORARY TABLE, URL ON *.*. (ACCESS_DENIED)
+(Тут ошибка с тем, что у пользователя нет прав именно на загрузку из url)
 
 
