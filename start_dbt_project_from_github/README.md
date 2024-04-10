@@ -13,6 +13,8 @@
  
   ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/02%20permission%20denied.png)
 - задаём доступ рекурсивно с помощью команды:
+
+ ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/03%20sudo%20chmod%20755%20-R.png)
  
          sudo chmod <три цифры уровня доступа> -R /home/natalia/<название скачанной папки с dbt-проектом>
   
