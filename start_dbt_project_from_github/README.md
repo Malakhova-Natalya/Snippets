@@ -26,4 +26,10 @@
   
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/04%20errors.png)
 
+- то вызываем команду
+              dbt debug
+
+  ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/05%20dbt%20debug.png)
+
+  с помощью этой команды можно понять, где что-то не сходится
 
