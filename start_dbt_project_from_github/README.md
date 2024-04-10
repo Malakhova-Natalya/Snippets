@@ -74,6 +74,6 @@ Execute is equivalent to “1.”
 - далее можно запускать проект, например так
 
           dbt run
-но это слишком экстремально, лучше запускать отдельную часть проекта, а не весь целиком :-)
+но это слишком экстремально, лучше запускать отдельную часть проекта, а не весь его целиком :-)
 
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/09%20dbt%20run.png)
