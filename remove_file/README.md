@@ -17,9 +17,9 @@
     - переходим по адресу, где лежит папка, которую будем удалять
    
       
-         Например, нужно удалить /home/natalia/old_dbt-etlcraft-main_old?
+         например, нужно удалить /home/natalia/old_dbt-etlcraft-main_old?
       
-         Значит переходим в /home/natalia
+         значит переходим в /home/natalia
     - выполняем команду rm -rf <имя папки>
       
          rm от слова remove, значит удалить
