@@ -46,7 +46,11 @@
 
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/07%20dbt%20debug.png)
 
+- далее нужно установить зависимости при помощи команды
+  
+          dbt deps
 
+![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/08%20dbt%20deps.png)
 
-![cover]()
+если с проектом всё в порядке, она тоже отработает успешно
 ![cover]()
