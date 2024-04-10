@@ -38,3 +38,15 @@
 - в данном примере с помощью команды cat мы посмотрим содержание файла profiles.yml и отредактируем значение профиля в dbt_project.yml, чтобы всё сходилось
 
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/06%20cat%20dbt_local.png)
+
+- если в dbt-проекте всё стало верно, то команда
+  
+          dbt debug
+  отработает успешно
+
+![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/07%20dbt%20debug.png)
+
+
+
+![cover]()
+![cover]()
