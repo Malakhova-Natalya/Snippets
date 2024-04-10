@@ -31,5 +31,7 @@
 
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/05%20dbt%20debug.png)
 
-  с помощью этой команды можно понять, где что-то не сходится
+  с помощью этой команды можно понять, где что-то не сходится. 
+  
+  В данном случае не сходятся профили в файлах profiles.yml и dbt_project.yml, и мы можем увидеть расположение этих файлов
 
