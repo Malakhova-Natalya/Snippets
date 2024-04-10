@@ -39,7 +39,7 @@
 
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/06%20cat%20dbt_local.png)
 
-- если в dbt-проекте всё стало верно, то команда
+- если в dbt-проекте всё стало верно, то команда debug, проверяющая отсутствие ошибок,
   
           dbt debug
   отработает успешно
