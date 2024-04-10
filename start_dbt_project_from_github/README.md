@@ -35,6 +35,6 @@
   
   В данном случае не сходятся профили в файлах profiles.yml и dbt_project.yml, и мы можем увидеть расположение этих файлов
 
-- в данном примере с помощью команды cat мы посмотрим содержание файла profiles.yml и отредактируем значение профиля в dbt_project.yml
+- в данном примере с помощью команды cat мы посмотрим содержание файла profiles.yml и отредактируем значение профиля в dbt_project.yml, чтобы всё сходилось
 
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/06%20cat%20dbt_local.png)
