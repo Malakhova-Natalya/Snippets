@@ -19,6 +19,23 @@
 
   
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/03%20sudo%20chmod%20755%20-R.png)
+
+Три цифры потому что задаём доступы для: Owner, Group, Others
+
+Read is equivalent to “4.”
+Write is equivalent to “2.”
+Execute is equivalent to “1.”
+
+Комбинации этих прав дают следующие цифры от 0 до 7:
+
+0: No permission
+1: Execute
+2: Write
+3: Write and Execute
+4: Read
+5: Read and Execute
+6: Read and Write
+7: Read, Write, and Execute
   
 Подробнее про варианты уровней доступа можно прочитать [здесь](https://www.maketecheasier.com/file-permissions-what-does-chmod-777-means/)
 
