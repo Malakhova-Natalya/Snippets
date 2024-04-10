@@ -6,7 +6,7 @@
     
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/01%20git%20clone.png)
 
-- заходим в Visual Studio Code -> Terminal Ubuntu-22.04 (WSL)
+- заходим, например, в Visual Studio Code -> Terminal Ubuntu-22.04 (WSL)
 - переходим по адресу, куда будем скачивать репозиторий. Например, у меня это /home/natalia/
 - выполняем команду git clone <скопированная ссылка на репозиторий>
 - далее при попытке запуска проекта (любой команды dbt) мы можем увидеть ошибку доступа: Permission denied
