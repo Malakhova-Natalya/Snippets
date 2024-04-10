@@ -22,7 +22,7 @@
   
 Подробнее про варианты уровней доступа можно прочитать [здесь](https://www.maketecheasier.com/file-permissions-what-does-chmod-777-means/)
 
-- если далее при попытке запустить проект встречаем ошибки, например, такие: (could not run dbt)
+- если далее при попытке запустить проект встречаем ошибки, например, такие: (что в итоге даёт could not run dbt)
   
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/04%20errors.png)
 
