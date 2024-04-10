@@ -53,4 +53,10 @@
 ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/08%20dbt%20deps.png)
 
 если с проектом всё в порядке, она тоже отработает успешно
-![cover]()
+
+- далее можно запускать проект, например так
+
+          dbt run
+но это слишком экстремально, лучше запускать отдельную часть проекта, а не весь целиком :-)
+
+![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/09%20dbt%20run.png)
