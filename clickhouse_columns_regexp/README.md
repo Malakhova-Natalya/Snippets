@@ -12,7 +12,7 @@ SELECT *EXCEPT( названия колонок через запятые) ?
 Этот вариант не годится, т.к. названия колонок могут быть разными.
 
 ----------------------------------------------------------------
-Мы можем использовать SELECT COLUMNS('regexp') - куда внутрь можем подставить регулярное выражение, которое отберёт только нужные колонки.
+Мы можем использовать **SELECT COLUMNS('regexp')** - куда внутрь можем подставить регулярное выражение, которое отберёт только нужные колонки.
 
 https://clickhouse.com/docs/ru/sql-reference/statements/select
 
@@ -23,7 +23,7 @@ https://clickhouse.com/docs/ru/sql-reference/statements/select
 Но главное, чтобы запрос работал в ClickHouse.
 
 ----------------------------------------------------------------
-Тестовые данные:
+**Тестовые данные:**
 
 WITH t1 AS (
 SELECT 
@@ -43,4 +43,4 @@ SELECT COLUMNS('') FROM t1
 
 ----------------------------------------------------------------
 
-Моё решение: [здесь](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_columns_regexp/01%20-%20описание%20задачи%20COLUMNS(regexp).txt)
+**Моё решение**: [здесь](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_columns_regexp/01%20-%20описание%20задачи%20COLUMNS(regexp).txt)
