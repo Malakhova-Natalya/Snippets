@@ -8,3 +8,5 @@
 **Скачать и запустить dbt-проект с гитхаба**: [последовательность действий](https://github.com/Malakhova-Natalya/Simple_scenarios/tree/main/start_dbt_project_from_github)
 
 **ClickHouse: на ходу отобрать колонки по условию**: [COLUMNS('regexp')](https://github.com/Malakhova-Natalya/Snippets/tree/main/clickhouse_columns_regexp)
+
+**ClickHouse: сгенерировать строки с датами, имея дату начала и дату конца периода**: [варианты](https://github.com/Malakhova-Natalya/Snippets/tree/main/clickhouse_date_range)
