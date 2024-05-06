@@ -25,19 +25,19 @@ https://clickhouse.com/docs/ru/sql-reference/statements/select
 ----------------------------------------------------------------
 **Тестовые данные:**
 
-WITH t1 AS (
-SELECT 
-1 AS `column_name`, 
-1 AS `t1.column_name`, 
-1 AS `t2.column_name`, 
-1 AS `t2.some_column_name`, 
-1 AS `abcd`, 
-1 AS `table_column_name`,
-1 AS `__datetime`,
-1 AS `_table_name`)
+    WITH t1 AS (
+    SELECT 
+    1 AS `column_name`, 
+    1 AS `t1.column_name`, 
+    1 AS `t2.column_name`, 
+    1 AS `t2.some_column_name`, 
+    1 AS `abcd`, 
+    1 AS `table_column_name`,
+    1 AS `__datetime`,
+    1 AS `_table_name`)
 
 
-SELECT COLUMNS('') FROM t1 
+    SELECT COLUMNS('') FROM t1 
 
 Что нужно подставить внутрь COLUMNS('') чтобы отобрать все колонки, кроме t2.<название_колонки> из этого примера?
 
