@@ -83,3 +83,5 @@ https://clickhouse.com/docs/ru/sql-reference/statements/select
         1 AS `_table_name2`)
 
         SELECT COLUMNS('^[a-zA-z|_|0-9]*$') FROM t1 
+
+        COLUMNS('^[^.]+$')
