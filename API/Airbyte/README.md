@@ -66,7 +66,7 @@
 Обратимся к файлу:
 
     with open('1.json') as f:
-...   c=json.load(f)
+        c=json.load(f)
 
 команда
 
