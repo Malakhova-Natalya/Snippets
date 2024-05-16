@@ -9,6 +9,7 @@
 Документация Airbyte по API: https://airbyte-public-api-docs.s3.us-east-2.amazonaws.com/rapidoc-api-docs.html
 
 **Начало работы**:
+
 Например, можно работать в Visual Studio Code. Открываем Terminal --> New Terminal --> Ubuntu (wsl)
 
 
