@@ -101,5 +101,10 @@
     --url https://airbyte-SOMEWHERE.adventum.ru/api/v1/sources/create \
     --data '{"sourceDefinitionId":"SOURCE_DEFINITION_ID","workspaceId":"NEW_PLACE_WORKSPACE_ID","connectionConfiguration":{"reports":[{"name":"custom_report","fields":["Date","CampaignId","CampaignName","CampaignType","AdId","Cost","Impressions","Clicks"],"goal_ids":[],"filters_json":"[]","additional_fields":[],"attribution_models":[]}],"date_range":{"load_today":true,"date_range_type":"last_days","last_days_count":5},"credentials":{"auth_type":"credentials_craft_auth","credentials_craft_host":"https://credentialscraft-SOMEWHERE.adventum.ru","credentials_craft_token":"**********","credentials_craft_token_id":TOKEN_NUMBER},"client_login":"adventum-CLIENT","adimages_use_simple_loader":true},"name":"NEW_NAME"}'
 
-этот метод создаёт новый шаблон с именем NEW_NAME  
-Сюда вставляем ***sourceDefinitionId, connectionConfiguration***, взятые из первого запроса и NEW_PLACE_WORKSPACE_ID берём из ссылки в новом пространстве.
+этот метод создаёт новый шаблон с именем NEW_NAME 
+
+В этом запросе в пераметр --data вставляем:
+- ***sourceDefinitionId*** - из первого запроса
+- workspaceId со значением NEW_PLACE_WORKSPACE_ID - его берём из ссылки в новом пространстве
+- ***connectionConfiguration*** - из первого запроса 
+- name - здесь в NEW_NAME указываем как хотим назвать новый connection
