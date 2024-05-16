@@ -40,6 +40,8 @@
     --url https://airbyte-SOMEWHERE.adventum.ru/api/v1/source_definitions/list \
     --data '{"workspaceId": "WORKSPACE_ID", "includeTombstone": false}'
 
+выдаёт оооочень много данных, пример результата здесь приводить не буду. Для нашей задачи можно обойтись и без этого метода.
+
 
 **Метод sources/create**:
 
@@ -47,3 +49,5 @@
     --header 'accept: application/json' --header 'content-type: application/json' \
     --url https://airbyte-SOMEWHERE.adventum.ru/api/v1/sources/create \
     <SOMETHING},"client_login":"SOMETHING","adimages_use_simple_loader":true},"name":"NEW_NAME"}'
+
+этот метод создаёт новый шаблон с именем NEW_NAME
