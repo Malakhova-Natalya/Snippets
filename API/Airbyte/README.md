@@ -32,6 +32,13 @@
 
     {"sourceDefinitionId":"SOURCE_DEFINITION_ID","sourceId":"SOURCE_ID","workspaceId":"WORKSPACE_ID","connectionConfiguration":{"reports":[{"name":"custom_report","fields":["Date","CampaignId","CampaignName","CampaignType","AdId","Cost","Impressions","Clicks"],"goal_ids":[],"filters_json":"[]","additional_fields":[],"attribution_models":[]}],"date_range":{"load_today":true,"date_range_type":"last_days","last_days_count":5},"credentials":{"auth_type":"credentials_craft_auth","credentials_craft_host":"https://credentialscraft-SOMEWHERE.adventum.ru","credentials_craft_token":"**********","credentials_craft_token_id":TOKEN_NUMBER},"client_login":"adventum-CLIENT","adimages_use_simple_loader":true},"name":"yd_default_","sourceName":"yd"}
 
+Этот результат даёт нам:
+- sourceDefinitionId
+- sourceId
+- workspaceId
+- connectionConfiguration
+- name - нказвание подключения, т.е. connection 
+- sourceName - название connector
 
 **Метод source_definitions/list**:
 
