@@ -37,7 +37,7 @@
 - sourceId
 - workspaceId
 - connectionConfiguration
-- name - нказвание подключения, т.е. connection 
+- name - название connection 
 - sourceName - название connector
 
 **Метод source_definitions/list**:
