@@ -1,21 +1,21 @@
-## API - Airbyte
+# API - Airbyte
 
 Есть задача перенести шаблоны подключений Airbyte из одного проекта в другой/другие. Сделать это нужно по API, т.к. шаблон можно создать один, и затем добавлять его на все новые проекты + по API можно передавать шаблон, не имея ещё доступов/токенов/аутентификации.
 
-### Разбор элементов работающего запроса
+## Разбор элементов работающего запроса
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/API/Airbyte/API%20Airbyte%20разбор%20запроса.png)
 
 Документация Airbyte по API: https://airbyte-public-api-docs.s3.us-east-2.amazonaws.com/rapidoc-api-docs.html
 
-### Начало работы
+## Начало работы
 
 Например, можно работать в Visual Studio Code. Открываем Terminal --> New Terminal --> Ubuntu (wsl)
 
 Для более плотной работы разработчики советуют использовать postman/insomnia - кратко что это описано [здесь](https://github.com/Malakhova-Natalya/Snippets/tree/main/API).
 
 
-### Примеры кода (анонимная версия)
+## Примеры кода (анонимная версия)
 
 **Метод sources/get**:
 
