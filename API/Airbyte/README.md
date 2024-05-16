@@ -6,6 +6,8 @@
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/API/Airbyte/API%20Airbyte%20разбор%20запроса.png)
 
+Документация Airbyte по API: https://airbyte-public-api-docs.s3.us-east-2.amazonaws.com/rapidoc-api-docs.html
+
 **Примеры кода (анонимная версия)**:
 
 Метод sources/get:
