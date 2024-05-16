@@ -24,7 +24,7 @@
     --url https://airbyte-SOMEWHERE.adventum.ru/api/v1/sources/get \
     --data '{"sourceId": "SOURCE_ID"}'
 
-Кстати запросы можно писать в блокноте и затем вставлять их в командную строку. В таком случае иногда могут мешаться ненужные пробелы. Поэтому можно вставлять запросы без разбиения \ , в одну строку - например вот так:
+Кстати запросы можно писать в блокноте и затем вставлять их в командную строку. В таком случае иногда могут мешаться ненужные пробелы. Поэтому можно вставлять запросы без разбиения \ , в одну строку - например запрос выше будет выглядеть вот так:
 
     curl --request POST -u "airbyte:PASSWORD" --header 'accept: application/json' --header 'content-type: application/json' --url https://airbyte-SOMEWHERE.adventum.ru/api/v1/sources/get --data '{"sourceId": "SOURCE_ID"}'
 
