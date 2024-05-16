@@ -17,7 +17,7 @@
 
 **Примеры кода (анонимная версия)**:
 
-Метод sources/get:
+**Метод sources/get**:
 
     curl --request POST -u "airbyte:PASSWORD" \
     --header 'accept: application/json' --header 'content-type: application/json' \
@@ -28,7 +28,12 @@
 
     curl --request POST -u "airbyte:PASSWORD" --header 'accept: application/json' --header 'content-type: application/json' --url https://airbyte-SOMEWHERE.adventum.ru/api/v1/sources/get --data '{"sourceId": "SOURCE_ID"}'
 
-Метод source_definitions/list:
+выдаёт например такой результат:
+
+    {"sourceDefinitionId":"SOURCE_DEFINITION_ID","sourceId":"SOURCE_ID","workspaceId":"WORKSPACE_ID","connectionConfiguration":{"reports":[{"name":"custom_report","fields":["Date","CampaignId","CampaignName","CampaignType","AdId","Cost","Impressions","Clicks"],"goal_ids":[],"filters_json":"[]","additional_fields":[],"attribution_models":[]}],"date_range":{"load_today":true,"date_range_type":"last_days","last_days_count":5},"credentials":{"auth_type":"credentials_craft_auth","credentials_craft_host":"https://credentialscraft-SOMEWHERE.adventum.ru","credentials_craft_token":"**********","credentials_craft_token_id":TOKEN_NUMBER},"client_login":"adventum-CLIENT","adimages_use_simple_loader":true},"name":"yd_default_","sourceName":"yd"}
+
+
+**Метод source_definitions/list**:
 
     curl --request POST -u "airbyte:PASSWORD" \
     --header 'accept: application/json' --header 'content-type: application/json' \
@@ -36,7 +41,7 @@
     --data '{"workspaceId": "WORKSPACE_ID", "includeTombstone": false}'
 
 
-Метод sources/create:
+**Метод sources/create**:
 
     curl --request POST -u "airbyte:PASSWORD" \
     --header 'accept: application/json' --header 'content-type: application/json' \
