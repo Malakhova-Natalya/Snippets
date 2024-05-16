@@ -9,6 +9,14 @@
 Примеры кода (анонимная версия):
 
     curl --request POST -u "airbyte:PASSWORD" \
-    --header 'accept: application/json' --header 'content-type: application/json' \ 
-    --url https://airbyte-SOMEWHERE.adventum.ru/api/v1/sources/get \  
+    --header 'accept: application/json' --header 'content-type: application/json' \
+    --url https://airbyte-SOMEWHERE.adventum.ru/api/v1/sources/get \
     --data '{"sourceId": "SOURCE_ID"}'
+
+
+    curl --request POST -u "airbyte:PASSWORD" \
+    --header 'accept: application/json' --header 'content-type: application/json' \
+    --url https://airbyte-SOMEWHERE.adventum.ru/api/v1/source_definitions/list \
+    --data '{"workspaceId": "WORKSPACE_ID", "includeTombstone": false}'
+
+    
