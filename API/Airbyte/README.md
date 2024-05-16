@@ -57,6 +57,6 @@
     curl --request POST -u "airbyte:PASSWORD" \
     --header 'accept: application/json' --header 'content-type: application/json' \
     --url https://airbyte-SOMEWHERE.adventum.ru/api/v1/sources/create \
-    <SOMETHING},"client_login":"SOMETHING","adimages_use_simple_loader":true},"name":"NEW_NAME"}'
+    <SOMETHING},"name":"NEW_NAME"}'
 
 этот метод создаёт новый шаблон с именем NEW_NAME
