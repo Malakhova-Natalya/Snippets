@@ -12,6 +12,8 @@
 
 Например, можно работать в Visual Studio Code. Открываем Terminal --> New Terminal --> Ubuntu (wsl)
 
+Для более плотной работы разработчики советуют использовать postman/insomnia - кратко это записано [здесь](https://github.com/Malakhova-Natalya/Snippets/tree/main/API).
+
 
 **Примеры кода (анонимная версия)**:
 
