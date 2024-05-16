@@ -17,7 +17,7 @@
 
 ## Примеры кода (анонимная версия)
 
-**Метод sources/get**:
+### Метод sources/get
 
     curl --request POST -u "airbyte:PASSWORD" \
     --header 'accept: application/json' --header 'content-type: application/json' \
@@ -42,7 +42,7 @@
 
 С помощью такого запроса мы можем получить информацию о каком-либо connection, который, например, мы хотим перенести с одного проекта на другой. Эта информация пригодится при создании connection на другом проекте - там при помощи запроса с методом create мы передадим полученную здесь информацию (возьмём ***sourceDefinitionId, connectionConfiguration***) 
 
-**Метод source_definitions/list**:
+### Метод source_definitions/list
 
     curl --request POST -u "airbyte:PASSWORD" \
     --header 'accept: application/json' --header 'content-type: application/json' \
@@ -94,7 +94,7 @@
 
 Таким образом мы можем получить SOURCE_DEFINITION_ID для любого коннектора.
 
-**Метод sources/create**:
+### Метод sources/create
 
     curl --request POST -u "airbyte:PASSWORD" \
     --header 'accept: application/json' --header 'content-type: application/json' \
