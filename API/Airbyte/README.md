@@ -40,7 +40,7 @@
 - name - название connection 
 - sourceName - название connector
 
-С помощью такого запроса мы можем получить информацию о каком-либо connection, который, например, мы хотим перенести с одного проекта на другой. Эта информация пригодится при создании connection на другом проекте - там при помощи запроса с методом create мы передадим полученную здесь информацию (возьмём sourceDefinitionId,sourceId,workspaceId,connectionConfiguration)
+С помощью такого запроса мы можем получить информацию о каком-либо connection, который, например, мы хотим перенести с одного проекта на другой. Эта информация пригодится при создании connection на другом проекте - там при помощи запроса с методом create мы передадим полученную здесь информацию (возьмём sourceDefinitionId, sourceId, workspaceId, connectionConfiguration)
 
 **Метод source_definitions/list**:
 
