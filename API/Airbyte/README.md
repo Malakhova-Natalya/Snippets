@@ -40,7 +40,7 @@
 - name - название connection 
 - sourceName - название connector
 
-С помощью такого запроса мы можем получить информацию о каком-либо connection, который, например, мы хотим перенести с одного проекта на другой. Эта информация пригодится при создании connection на другом проекте - там при помощи запроса с методом create мы передадим полученную здесь информацию (возьмём sourceDefinitionId, connectionConfiguration) ???
+С помощью такого запроса мы можем получить информацию о каком-либо connection, который, например, мы хотим перенести с одного проекта на другой. Эта информация пригодится при создании connection на другом проекте - там при помощи запроса с методом create мы передадим полученную здесь информацию (возьмём sourceDefinitionId, connectionConfiguration) **ЗДЕСЬ ВОПРОС - это ли берём?**
 
 **Метод source_definitions/list**:
 
@@ -49,7 +49,7 @@
     --url https://airbyte-SOMEWHERE.adventum.ru/api/v1/source_definitions/list \
     --data '{"workspaceId": "WORKSPACE_ID", "includeTombstone": false}'
 
-выдаёт оооочень много данных, пример результата здесь приводить не буду. Для нашей задачи можно обойтись и без этого метода.
+выдаёт оооочень много данных, пример результата здесь приводить не буду. Для нашей задачи можно обойтись и без этого метода. **ЗДЕСЬ ВОПРОС - этот метод нам не нужен ведь?**
 
 
 **Метод sources/create**:
@@ -59,4 +59,4 @@
     --url https://airbyte-SOMEWHERE.adventum.ru/api/v1/sources/create \
     <SOMETHING},"name":"NEW_NAME"}'
 
-этот метод создаёт новый шаблон с именем NEW_NAME
+этот метод создаёт новый шаблон с именем NEW_NAME  **ЗДЕСЬ ВОПРОС - что после create? я так поняла --data '{"sourceDefinitionId":"f829dd7a-aa3d-458c-9367-c2368d6ebd97","connectionConfiguration": ?**
