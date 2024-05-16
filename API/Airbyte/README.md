@@ -51,6 +51,43 @@
 
 выдаёт оооочень много данных, поэтому лучше использовать python, чтобы посмотреть этот файл.
 
+Запишем результат в файл при помощи символа >имя_файла.json:
+
+    curl --request POST -u "airbyte:sWFRNday3ve752WV" --header 'accept: application/json' --header 'content-type: application/json' --url https://airbyte-maxi.adventum.ru/api/v1/source_definitions/list --data '{"workspaceId": "40ec897e-924c-4091-9160-427e80b25f49", "includeTombstone": false}' >1.json
+
+Включим python:
+
+    python3
+Импортируем json, если его нет:
+
+    import json
+    
+Обратимся к файлу:
+
+    with open('1.json') as f:
+...   c=json.load(f)
+
+    c.keys()
+
+даст результат
+
+    dict_keys(['sourceDefinitions'])
+
+команда
+
+    c['sourceDefinitions'][0].keys()
+
+даст результат
+
+    dict_keys(['sourceDefinitionId', 'name', 'dockerRepository', 'dockerImageTag', 'documentationUrl', 'icon', 'releaseStage', 'releaseDate', 'resourceRequirements'])
+
+команда
+
+    [(x['name'],x['sourceDefinitionId']) for x in c['sourceDefinitions']]
+
+даст результат
+
+    
 
 **Метод sources/create**:
 
