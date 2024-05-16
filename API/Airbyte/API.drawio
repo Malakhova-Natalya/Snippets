@@ -1,0 +1,154 @@
+<mxfile host="app.diagrams.net" modified="2024-05-16T08:40:38.082Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 YaBrowser/24.4.0.0 Safari/537.36" etag="DoKem2VMtItZxVBNyF1y" version="24.4.2" type="device">
+  <diagram name="Страница — 1" id="lSyjK3MrqVwTr0EdSTyy">
+    <mxGraphModel dx="1402" dy="943" grid="0" gridSize="1" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="#9d3939" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-29" value="" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="210" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-8" value="" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="56" y="-30" width="350" height="100" as="geometry" />
+        </mxCell>
+        <UserObject label="curl --request POST -u &quot;airbyte:PASSWORD&quot; \&#xa;--header &#39;accept: application/json&#39; --header &#39;content-type: application/json&#39; \&#xa;--url https://airbyte-somewhere.adventum.ru/api/v1/sources/get \&#xa;--data &#39;{&quot;sourceId&quot;: &quot;SOURCE_ID&quot;}&#39;" link="#curl --request POST -u &quot;airbyte:sWFRNday3ve752WV&quot; \                                                                                                                                                               #   --header &#39;accept: application/json&#39; --header &#39;content-type: application/json&#39; \                                                                                                                                #  --url https://airbyte-maxi.adventum.ru/api/v1/sources/get \                                                                                                                                                     #  --data &#39;{&quot;sourceId&quot;: &quot;9604a5d3-f8bb-411a-bd4f-47d325c25ae4&quot;}&#39;" id="Y1xxtqX8YOVfjpAkP79h-2">
+          <mxCell style="text;whiteSpace=wrap;spacing=8;spacingTop=2;spacingBottom=6;spacingLeft=2;spacingRight=4;fontSize=17;labelBackgroundColor=none;labelBorderColor=none;textShadow=0;fontColor=#000000;fontStyle=0" vertex="1" parent="1">
+            <mxGeometry x="12" y="178" width="588" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-3" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;b&gt;Curl (client URL)&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt; — это инструмент командной строки на основе библиотеки libcurl для передачи данных с сервера и на сервер при помощи &lt;br&gt;различных протоколов&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="71" y="-23" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-12" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.213;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="Y1xxtqX8YOVfjpAkP79h-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="190" as="sourcePoint" />
+            <mxPoint x="80" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="69" y="192" />
+              <mxPoint x="104" y="124" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-14" value="" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontSize=10;size=0.3771427699497768;" vertex="1" parent="1">
+          <mxGeometry x="-136" y="280" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-15" value="&lt;b&gt;--data&lt;/b&gt;&amp;nbsp;или&amp;nbsp;-d: в запрос включаются какие-то &lt;br&gt;данные." style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="283" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-17" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="43" y="280" as="sourcePoint" />
+            <mxPoint x="28" y="307" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="56" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-18" value="&lt;span style=&quot;color: rgb(72, 72, 72); font-family: &amp;quot;TT Norms Pro&amp;quot;, Arial, Helvetica, sans-serif; font-size: 12px;&quot;&gt;Параметры -x или &lt;b&gt;--request&lt;/b&gt; позволяют указать тип HTTP-запроса, который используется для &lt;br&gt;сообщения с сервером.&lt;/span&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontSize=12;align=left;verticalAlign=top;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="147" y="75" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-19" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.082;entryY=0.944;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="Y1xxtqX8YOVfjpAkP79h-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="200" as="sourcePoint" />
+            <mxPoint x="130" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="110" y="190" />
+              <mxPoint x="90" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-20" value="--user &amp;nbsp;или&amp;nbsp;&lt;b&gt;-u&lt;/b&gt; : логин и пароль для аутентификации на сервере." style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;align=left;verticalAlign=middle;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="417" y="-23" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-24" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.247;exitY=0.083;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Y1xxtqX8YOVfjpAkP79h-2" target="Y1xxtqX8YOVfjpAkP79h-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="200" as="sourcePoint" />
+            <mxPoint x="300" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="230" y="180" />
+              <mxPoint x="260" y="180" />
+              <mxPoint x="318" y="156" />
+              <mxPoint x="361" y="176" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-25" value="&lt;b&gt;--header&lt;/b&gt;&amp;nbsp;или&amp;nbsp;-H: в HTTP-запрос добавляется дополнительный заголовок, их может быть сколько угодно." style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;align=left;verticalAlign=top;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="560" y="120" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-27" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.575;exitY=0.4;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.005;entryY=0.592;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Y1xxtqX8YOVfjpAkP79h-2" target="Y1xxtqX8YOVfjpAkP79h-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="220" as="sourcePoint" />
+            <mxPoint x="540" y="170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="520" y="210" />
+              <mxPoint x="490" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-28" value="&lt;b&gt;--url&lt;/b&gt;: укажите URL-адрес&amp;nbsp;&lt;div&gt;для извлечения.&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="615" y="210" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-30" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="250" as="sourcePoint" />
+            <mxPoint x="610" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="550" y="250" />
+              <mxPoint x="560" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-31" value="&lt;b&gt;--url&lt;/b&gt; https://airbyte-somewhere.adventum.ru/api/v1/&lt;b&gt;METHOD&lt;/b&gt;&amp;nbsp;-&amp;nbsp;&lt;br&gt;&lt;b&gt;--data&lt;/b&gt; &#39;{&quot;&lt;b&gt;KEY&lt;/b&gt;&quot;:&quot;&lt;b&gt;VALUE&lt;/b&gt;&quot;}&lt;br&gt;&lt;br&gt;&lt;b&gt;METHOD, KEY, VALUE&lt;/b&gt; берем из документации:&lt;br&gt;https://airbyte-public-api-docs.s3.us-east-2.amazonaws.com/rapidoc-api-docs.html" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;spacingLeft=5;align=left;" vertex="1" parent="1">
+          <mxGeometry x="450" y="320" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-35" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.074;entryY=-0.009;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="Y1xxtqX8YOVfjpAkP79h-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="250" as="sourcePoint" />
+            <mxPoint x="460" y="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="270" />
+              <mxPoint x="510" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-36" value="&lt;b&gt;PASSWORD&lt;/b&gt; берём из Селектела, в данном случае это пароль из deploycraft_airbyte_admin_password" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="603" y="17" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-37" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.008;entryY=0.847;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="Y1xxtqX8YOVfjpAkP79h-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="190" as="sourcePoint" />
+            <mxPoint x="440" y="170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="460" y="170" />
+              <mxPoint x="440" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-38" value="&lt;b&gt;SOURCE_ID&lt;/b&gt; получаем из ссылки в Airbyte нужного source&lt;br&gt;вот структура ссылки - нужное в конце:&lt;br&gt;https://airbyte-somewhere.adventum.ru/workspaces/WORKSPACE_ID/source/&lt;b&gt;SOURCE_ID&lt;/b&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;align=left;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="-64" y="372" width="500" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-39" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.515;entryY=-0.027;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Y1xxtqX8YOVfjpAkP79h-2" target="Y1xxtqX8YOVfjpAkP79h-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="290" as="sourcePoint" />
+            <mxPoint x="200" y="340" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="290" />
+              <mxPoint x="250" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-40" value="вначале пишется curl, потом различные параметры через&lt;b&gt; --&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;\&lt;/b&gt; в конце строк нужен для того, чтобы длинный запрос разбить &lt;br&gt;на части - перенести на &lt;br&gt;следующую строку" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;align=left;spacingLeft=5;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="-136" y="62" width="192" height="141" as="geometry" />
+        </mxCell>
+        <mxCell id="Y1xxtqX8YOVfjpAkP79h-42" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.523;entryY=0.857;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Y1xxtqX8YOVfjpAkP79h-2" target="Y1xxtqX8YOVfjpAkP79h-40">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-60" y="253" as="sourcePoint" />
+            <mxPoint x="-10" y="203" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-22" y="205" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
