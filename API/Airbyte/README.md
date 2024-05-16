@@ -60,4 +60,4 @@
     <SOMETHING},"name":"NEW_NAME"}'
 
 этот метод создаёт новый шаблон с именем NEW_NAME  **ЗДЕСЬ ВОПРОС - что после create? я так поняла --data '{"sourceDefinitionId":"f829dd7a-aa3d-458c-9367-c2368d6ebd97","connectionConfiguration": ?
-ещё судя по [документации](https://airbyte-public-api-docs.s3.us-east-2.amazonaws.com/rapidoc-api-docs.html#post-/v1/sources/create) нужен secretId? Где его взять неясно**
+ещё судя по [документации](https://airbyte-public-api-docs.s3.us-east-2.amazonaws.com/rapidoc-api-docs.html#post-/v1/sources/create) нужен secretId не нужен. Нужен workSpaceId - его взять из ссылки в новом пространстве **
