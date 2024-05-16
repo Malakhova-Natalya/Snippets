@@ -51,13 +51,14 @@
 
 выдаёт оооочень много данных, поэтому лучше использовать python, чтобы посмотреть этот файл.
 
-Запишем результат в файл при помощи символа >имя_файла.json:
+Запишем результат в файл при помощи >1.json:
 
     curl --request POST -u "airbyte:sWFRNday3ve752WV" --header 'accept: application/json' --header 'content-type: application/json' --url https://airbyte-maxi.adventum.ru/api/v1/source_definitions/list --data '{"workspaceId": "40ec897e-924c-4091-9160-427e80b25f49", "includeTombstone": false}' >1.json
 
 Включим python:
 
     python3
+    
 Импортируем json, если его нет:
 
     import json
@@ -66,6 +67,8 @@
 
     with open('1.json') as f:
 ...   c=json.load(f)
+
+команда
 
     c.keys()
 
@@ -85,9 +88,11 @@
 
     [(x['name'],x['sourceDefinitionId']) for x in c['sourceDefinitions']]
 
-даст результат
+даст результат такого типа
 
-    
+    [('ym', 'SOURCE_DEFINITION_ID'), ('appmetrica', 'SOURCE_DEFINITION_ID'), ('yd', 'SOURCE_DEFINITION_ID'), ('ydisk', 'SOURCE_DEFINITION_ID'), ('vkads', 'SOURCE_DEFINITION_ID'), ('mt', 'SOURCE_DEFINITION_ID'), ...
+
+Таким образом мы можем получить SOURCE_DEFINITION_ID для любого коннектора.
 
 **Метод sources/create**:
 
