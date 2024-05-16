@@ -51,7 +51,7 @@
 
 выдаёт оооочень много данных, поэтому лучше использовать python, чтобы посмотреть этот файл.
 
-Запишем результат в файл при помощи >1.json:
+Запишем результат в файл 1.json, добавив после запроса >1.json:
 
     curl --request POST -u "airbyte:sWFRNday3ve752WV" --header 'accept: application/json' --header 'content-type: application/json' --url https://airbyte-maxi.adventum.ru/api/v1/source_definitions/list --data '{"workspaceId": "40ec897e-924c-4091-9160-427e80b25f49", "includeTombstone": false}' >1.json
 
