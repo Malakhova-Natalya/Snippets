@@ -64,8 +64,8 @@ Airbyte: а изменим-ка мы схему, куда будут идти с
 
     CREATE DATABASE airbyte_internal
   
-#### Последовательность действий, чтобы сделать составное название schema
-Рассмотрим для примера, что нам нужно для seeds сделать схему airbyte_internal.
+
+Рассмотрим для примера, что нам нужно для seeds сделать схему airbyte_internal и затем положить туда сырые данные. Что для этого нужно сделать?
 
 1. home/natalia/.dbt/profiles.yml - прописать
    
@@ -75,8 +75,11 @@ Airbyte: а изменим-ка мы схему, куда будут идти с
 
         seeds:
            schema: internal
+3. запустить по адресу <ваш_проект>/integration_tests команду
 
-Оно сгенерируется как надо - в airbyte_internal, потому что по умолчанию макрос [generate_schema_name](https://docs.getdbt.com/docs/build/custom-schemas#how-does-dbt-generate-a-models-schema-name) работает по такой логике:
+    dbt seed
+   
+Название схемы сгенерируется как надо - airbyte_internal, потому что по умолчанию макрос [generate_schema_name](https://docs.getdbt.com/docs/build/custom-schemas#how-does-dbt-generate-a-models-schema-name) работает по такой логике:
 
     {% macro generate_schema_name(custom_schema_name, node) -%}
 
@@ -95,6 +98,9 @@ Airbyte: а изменим-ка мы схему, куда будут идти с
 
 Этот макрос можно положить в папку macros (сразу в неё, без подпапок), и изменить его поведение. Однако избавиться от {{ default_schema }} в начале в любом случае не удастся, в документации есть специальный [Warning](https://docs.getdbt.com/docs/build/custom-schemas#warning-dont-replace-default_schema-in-the-macro)
 
-последствия экспериментов можно удалить в DBeaver вот так: 
+
+Последствия экспериментов - ненужную схему - можно легко удалить в DBeaver. Для этого нужна одна простая команда, например, такая: 
 
     DROP DATABASE test_airbyte_internal
+
+Она удалит и данные из этой схемы, и затем саму схему.
