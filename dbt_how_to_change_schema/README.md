@@ -25,7 +25,7 @@
 
         profile: 'dbt_local'
 
-То есть содержимое файла profiles.yml более общо можно обозначить как:
+То есть содержимое файла profiles.yml более обобщённо можно обозначить как:
 
     YOUR_PROFILE_NAME:
         outputs:
@@ -33,7 +33,7 @@
                 connect_timeout: YOUR_NUMBER
                 host: YOUR_HOST
                 port: YOUR_PORT
-                schema: **YOUR_SCHEMA_NAME**
+                schema: YOUR_SCHEMA_NAME
                 threads: YOUR_NUMBER
                 type: YOUR_TYPE
                 user: YOUR_NUMBER
