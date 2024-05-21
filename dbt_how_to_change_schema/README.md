@@ -24,3 +24,17 @@
 В самом верхнеуровнем файле dbt_project.yml должно быть указано то же значение профиля, например
 
         profile: 'dbt_local'
+
+То есть содержимое файла profiles.yml более общо можно обозначить как:
+
+    YOUR_PROFILE_NAME:
+        outputs:
+            dev:
+                connect_timeout: YOUR_NUMBER
+                host: YOUR_HOST
+                port: YOUR_PORT
+                schema: **YOUR_SCHEMA_NAME**
+                threads: YOUR_NUMBER
+                type: YOUR_TYPE
+                user: YOUR_NUMBER
+        target: dev
