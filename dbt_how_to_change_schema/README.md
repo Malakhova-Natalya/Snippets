@@ -93,4 +93,6 @@ Airbyte: а изменим-ка мы схему, куда будут идти с
 
     {%- endmacro %}
 
+Этот макрос можно положить в папку macros (сразу в неё, без подпапок), и изменить его поведение. Однако избавиться от {{ default_schema }} в начале в любом случае не удастся, для этого в документации есть специальный [Warning](https://docs.getdbt.com/docs/build/custom-schemas#warning-dont-replace-default_schema-in-the-macro)
+
 последствия экспериментов можно удалить в DBeaver вот так: DROP DATABASE test_airbyte_internal
