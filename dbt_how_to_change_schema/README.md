@@ -43,6 +43,6 @@
 
 В файле profiles.yml, который мы рассмотрели выше, нужно задать нужное Вам значение в 
 
-        schema: **YOUR_SCHEMA_NAME**
+        schema: YOUR_SCHEMA_NAME
 
 Остальное dbt сделает сам.
