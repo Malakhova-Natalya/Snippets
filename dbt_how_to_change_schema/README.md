@@ -20,3 +20,7 @@
                 type: clickhouse
                 user: default
         target: dev
+
+В самом верхнеуровнем файле dbt_project.yml должно быть указано то же значение профиля, например
+
+        profile: 'dbt_local'
