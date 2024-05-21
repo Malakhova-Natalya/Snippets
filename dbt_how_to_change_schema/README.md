@@ -65,4 +65,32 @@ Airbyte: а изменим-ка мы схему, куда будут идти с
         CREATE DATABASE airbyte_internal
   
 #### Последовательность действий, чтобы сделать составное название schema
+Рассмотрим для примера, что нам нужно для seeds сделать схему airbyte_internal.
 
+1. home/natalia/.dbt/profiles.yml - прописать
+   
+                   schema: airbyte
+
+2. integration_tests/dbt_project.yml - прописать
+
+        seeds:
+           schema: internal
+
+Оно сгенерируется как надо, потому что по умолчанию макрос [generate_schema_name](https://docs.getdbt.com/docs/build/custom-schemas#how-does-dbt-generate-a-models-schema-name) работает по такой логике:
+
+    {% macro generate_schema_name(custom_schema_name, node) -%}
+
+    {%- set default_schema = target.schema -%}
+    {%- if custom_schema_name is none -%}
+
+        {{ default_schema }}
+
+    {%- else -%}
+
+        {{ default_schema }}_{{ custom_schema_name | trim }}
+
+    {%- endif -%}
+
+{%- endmacro %}
+
+последствия экспериментов можно удалить в DBeaver вот так: DROP DATABASE test_airbyte_internal
