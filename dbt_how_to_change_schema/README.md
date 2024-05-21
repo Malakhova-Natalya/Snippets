@@ -8,14 +8,15 @@
 
 Содержимое этого файла может выглядеть примерно вот так:
 
-  dbt_local:
-      outputs:
-          dev:
-              connect_timeout: 30
-              host: localhost
-              port: 8123
-              schema: test
-              threads: 2
-              type: clickhouse
-              user: default
-      target: dev
+
+    dbt_local:
+        outputs:
+            dev:
+                connect_timeout: 30
+                host: localhost
+                port: 8123
+                schema: test
+                threads: 2
+                type: clickhouse
+                user: default
+        target: dev
