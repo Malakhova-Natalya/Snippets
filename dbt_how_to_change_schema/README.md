@@ -38,3 +38,7 @@
                 type: YOUR_TYPE
                 user: YOUR_NUMBER
         target: dev
+
+### Как изменить значение schema
+
+В файле profiles.yml, который мы рассмотрели выше, нужно задать нужное Вам значение в schema: **YOUR_SCHEMA_NAME**
