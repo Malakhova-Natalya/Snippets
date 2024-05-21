@@ -5,7 +5,7 @@
 
 **Удалить папки/файлы, которые не удаляются**: [2 варианта](https://github.com/Malakhova-Natalya/Simple_scenarios/tree/main/remove_file)
 
-**Скачать и запустить dbt-проект с гитхаба**: [последовательность действий](https://github.com/Malakhova-Natalya/Simple_scenarios/tree/main/start_dbt_project_from_github)
+**DBT - как скачать и запустить dbt-проект с гитхаба**: [последовательность действий](https://github.com/Malakhova-Natalya/Simple_scenarios/tree/main/start_dbt_project_from_github)
 
 **ClickHouse: на ходу отобрать колонки по условию**: [COLUMNS('regexp')](https://github.com/Malakhova-Natalya/Snippets/tree/main/clickhouse_columns_regexp)
 
@@ -13,4 +13,4 @@
 
 **API - Airbyte**: [разбор рачобего запроса по API к Airbyte](https://github.com/Malakhova-Natalya/Snippets/tree/main/API/Airbyte)
 
-**Dbt - как изменить значение schema**: [разбор](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt_how_to_change_schema)
+**DBT - как изменить значение schema**: [разбор](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt_how_to_change_schema)
