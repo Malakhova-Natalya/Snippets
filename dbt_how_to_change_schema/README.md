@@ -76,21 +76,21 @@ Airbyte: а изменим-ка мы схему, куда будут идти с
         seeds:
            schema: internal
 
-Оно сгенерируется как надо, потому что по умолчанию макрос [generate_schema_name](https://docs.getdbt.com/docs/build/custom-schemas#how-does-dbt-generate-a-models-schema-name) работает по такой логике:
+Оно сгенерируется как надо - в airbyte_internal, потому что по умолчанию макрос [generate_schema_name](https://docs.getdbt.com/docs/build/custom-schemas#how-does-dbt-generate-a-models-schema-name) работает по такой логике:
 
     {% macro generate_schema_name(custom_schema_name, node) -%}
 
-    {%- set default_schema = target.schema -%}
-    {%- if custom_schema_name is none -%}
+        {%- set default_schema = target.schema -%}
+        {%- if custom_schema_name is none -%}
 
-        {{ default_schema }}
+            {{ default_schema }}
 
-    {%- else -%}
+        {%- else -%}
 
-        {{ default_schema }}_{{ custom_schema_name | trim }}
+            {{ default_schema }}_{{ custom_schema_name | trim }}
 
-    {%- endif -%}
+        {%- endif -%}
 
-{%- endmacro %}
+    {%- endmacro %}
 
 последствия экспериментов можно удалить в DBeaver вот так: DROP DATABASE test_airbyte_internal
