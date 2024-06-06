@@ -10,3 +10,4 @@
 1. Заходим в Ubuntu
 2. Активируем облачное окружение python
 
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt_error_Enum8/ubuntu%20%2B%20python.png)
