@@ -15,5 +15,5 @@
 
 **ClickHouse: сгенерировать строки с датами, имея дату начала и дату конца периода**: [варианты](https://github.com/Malakhova-Natalya/Snippets/tree/main/clickhouse_date_range)
 
-**API - Airbyte**: [разбор рачобего запроса по API к Airbyte](https://github.com/Malakhova-Natalya/Snippets/tree/main/API/Airbyte)
+**API - Airbyte**: [разбор рабочего запроса по API к Airbyte](https://github.com/Malakhova-Natalya/Snippets/tree/main/API/Airbyte)
 
