@@ -12,3 +12,4 @@ https://docs.getdbt.com/reference/commands/cmd-docs
 Отобразить:
 
     dbt docs serve --port 8001
+ и перейти по ссылке
