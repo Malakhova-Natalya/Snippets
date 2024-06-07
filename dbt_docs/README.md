@@ -1,4 +1,4 @@
-##
+## Как отобразить документацию dbt-проекта
 
 Документация:
 https://docs.getdbt.com/reference/commands/cmd-docs
