@@ -38,7 +38,7 @@
 
     dbt_packages > dbt_utils > macros > sql > get_table_types_sql
 
-и меняем ему формат вывода например вот так:
+и меняем ему формат вывода на String например вот так:
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt_error_Enum8/get_table_types_sql.png)
 
