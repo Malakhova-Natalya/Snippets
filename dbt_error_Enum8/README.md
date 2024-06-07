@@ -40,4 +40,13 @@
 
 и меняем ему формат вывода например вот так:
 
-![cover]()
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt_error_Enum8/get_table_types_sql.png)
+
+        {% macro default__get_table_types_sql() %}
+            case toString(table_type)
+                when 'BASE TABLE' then 'table'
+                when 'EXTERNAL TABLE' then 'external'
+                when 'MATERIALIZED VIEW' then 'materializedview'
+                else lower(toString(table_type))
+            end as {{ adapter.quote('table_type') }}
+        {% endmacro %}
