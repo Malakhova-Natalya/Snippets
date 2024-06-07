@@ -11,6 +11,8 @@
 
 **DBT - как исправить ошибку Enum8**: [разбор](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt_error_Enum8)
 
+**DBT - как запустить и посмотреть документацию проекта**: [разбор - начало](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt_docs/README.md)
+
 **ClickHouse: на ходу отобрать колонки по условию**: [COLUMNS('regexp')](https://github.com/Malakhova-Natalya/Snippets/tree/main/clickhouse_columns_regexp)
 
 **ClickHouse: сгенерировать строки с датами, имея дату начала и дату конца периода**: [варианты](https://github.com/Malakhova-Natalya/Snippets/tree/main/clickhouse_date_range)
