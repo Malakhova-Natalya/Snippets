@@ -9,7 +9,7 @@
 
 **DBT - как изменить значение schema**: [разбор](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt_how_to_change_schema)
 
-**DBT - как исправить ошибку Enum8**: [разбор](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt_error_Enum8)
+**DBT - как исправить ошибки, разбор на примере Enum8**: [разбор](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt_error_Enum8)
 
 **DBT - как запустить и посмотреть документацию проекта**: [разбор - начало](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt_docs/README.md)
 
