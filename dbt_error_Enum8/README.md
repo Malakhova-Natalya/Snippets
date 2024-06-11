@@ -1,4 +1,4 @@
-
+## Как разбираться с редкими/непонятными ошибками dbt (на примере ошибки Enum8)
 Если при запуске моделей dbt появляется ошибка такого рода:
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt_error_Enum8/dbt%20-%20error%20Enum8.png)
