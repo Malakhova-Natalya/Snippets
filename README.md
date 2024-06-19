@@ -17,7 +17,7 @@
 
 **ClickHouse: сгенерировать строки с датами, имея дату начала и дату конца периода**: [варианты](https://github.com/Malakhova-Natalya/Snippets/tree/main/clickhouse_date_range)
 
-**ClickHouse: заменить нулевые строки последним значением**: [вариант решения - задача про подписчиков](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_date_range/README.md#clickhouse-заменить-пропуски-последним-значением)
+**ClickHouse: заменить нулевые строки последним значением**: [задача про подписчиков](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_date_range/README.md#clickhouse-заменить-пропуски-последним-значением)
 
 **API - Airbyte**: [разбор рабочего запроса по API к Airbyte](https://github.com/Malakhova-Natalya/Snippets/tree/main/API/Airbyte)
 
