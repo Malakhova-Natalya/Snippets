@@ -16,9 +16,9 @@
 Мы будем искать последнее значение - LAST_VALUE - отфильтровывая строки на ходу через FILTER. То есть мы будем брать только те строки, где число подписчиков не равно 0, и среди них искать последнее значение. 
 
     LAST_VALUE(followers) FILTER (WHERE followers !=0)
-			     OVER (PARTITION BY socSource
-			     ORDER BY socSource, socDate
-			     ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS followers_fixed
+			      OVER (PARTITION BY socSource
+			      ORDER BY socSource, socDate
+			      ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS followers_fixed
 
 Результат работы функции:
      
