@@ -19,7 +19,7 @@
 
 **ClickHouse: заменить нулевые строки последним значением**: [задача про подписчиков](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_date_range/README.md#clickhouse-заменить-пропуски-последним-значением)
 
-**ClickHouse: сравнить запросы**:[пример запроса к system.query_log](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_date_range/README.md#clickhouse-сравнить-запросы)
+**ClickHouse: сравнить запросы**: [пример запроса к system.query_log](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_date_range/README.md#clickhouse-сравнить-запросы)
 
 **API - Airbyte**: [разбор рабочего запроса по API к Airbyte](https://github.com/Malakhova-Natalya/Snippets/tree/main/API/Airbyte)
 
