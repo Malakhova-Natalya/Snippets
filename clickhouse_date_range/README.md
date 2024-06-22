@@ -90,5 +90,15 @@
 	TG 		2024-03-08 	20360		20360
 	TG 		2024-03-09 	20349		20349
 
+Похожий вариант: **CASE WHEN ... ELSE ... END внутри функции LAT_VALUE**
+
+
+	LAST_VALUE(CASE WHEN followers!=0 THEN followers 
+				ELSE COALESCE(replaceAll(followers, 0, NULL)) END) 
+		   OVER(PARTITION BY socSource 
+				ORDER BY socSource, socDate 
+				ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS followers_fixed
+
+
 
 Таким образом в ClickHouse можно решить задачу на заполнение пропусков последним имеющимся значением при любом количестве пропусков подряд. Возможно, в другой базе данных подобную задачу можно решить лаконичнее через GROUPS BETWEEN (ClickHouse такое не поддерживает) или каким-то ещё более интересным/простым способом. 
