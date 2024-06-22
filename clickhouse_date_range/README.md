@@ -7,11 +7,11 @@
 1. создаём модель, например, dim_calendar.sql
 2. прописываем в ней config, например:
 
-   	{{ config(
-		materialized='table',
-		order_by='date_day'
-		) 
-	}}
+   		{{ config(
+			materialized='table',
+			order_by='date_day'
+			) 
+   		}}
 
 4. вызывыем макрос, указывая дату начала и дату конца календаря по своему усмотрению:
 
