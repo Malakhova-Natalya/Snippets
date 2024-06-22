@@ -114,6 +114,7 @@
 	FROM my_table
 
 
+
 	SELECT socSource, socDate, followers, LAST_VALUE(CASE WHEN followers!=0 THEN followers 
 				ELSE COALESCE(replaceAll(followers, 0, NULL)) END) 
 		   OVER(PARTITION BY socSource 
