@@ -13,13 +13,13 @@
 
 **DBT - как запустить и посмотреть документацию проекта**: [разбор - начало](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt_docs/README.md)
 
-**ClickHouse: на ходу отобрать колонки по условию**: [COLUMNS('regexp')](https://github.com/Malakhova-Natalya/Snippets/tree/main/clickhouse_columns_regexp)
+**ClickHouse - на ходу отобрать колонки по условию**: [COLUMNS('regexp')](https://github.com/Malakhova-Natalya/Snippets/tree/main/clickhouse_columns_regexp)
 
-**ClickHouse: сгенерировать строки с датами, имея дату начала и дату конца периода**: [варианты](https://github.com/Malakhova-Natalya/Snippets/tree/main/clickhouse_date_range)
+**ClickHouse - сгенерировать строки с датами, имея дату начала и дату конца периода**: [варианты](https://github.com/Malakhova-Natalya/Snippets/tree/main/clickhouse_date_range)
 
-**ClickHouse: заменить нулевые строки последним значением**: [задача про подписчиков](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_date_range/README.md#clickhouse-заменить-пропуски-последним-значением)
+**ClickHouse - заменить нулевые строки последним значением**: [задача про подписчиков](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_date_range/README.md#clickhouse-заменить-пропуски-последним-значением)
 
-**ClickHouse: сравнить запросы**: [пример запроса к system.query_log](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_date_range/README.md#clickhouse-сравнить-запросы)
+**ClickHouse - сравнить запросы**: [пример запроса к system.query_log](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_date_range/README.md#clickhouse-сравнить-запросы)
 
 **API - Airbyte**: [разбор рабочего запроса по API к Airbyte](https://github.com/Malakhova-Natalya/Snippets/tree/main/API/Airbyte)
 
