@@ -102,3 +102,36 @@
 
 
 Таким образом в ClickHouse можно решить задачу на заполнение пропусков последним имеющимся значением при любом количестве пропусков подряд. Возможно, в другой базе данных подобную задачу можно решить лаконичнее через GROUPS BETWEEN (ClickHouse такое не поддерживает) или каким-то ещё более интересным/простым способом. 
+
+## ClickHouse: сравнить запросы
+
+Например, у нас есть два решения одной задачи и мы хотим сравнить запросы:
+
+	SELECT socSource, socDate, followers, LAST_VALUE(followers) FILTER (WHERE followers !=0)
+			      OVER (PARTITION BY socSource
+			      ORDER BY socSource, socDate
+			      ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS followers_fixed
+	FROM my_table
+
+
+	SELECT socSource, socDate, followers, LAST_VALUE(CASE WHEN followers!=0 THEN followers 
+				ELSE COALESCE(replaceAll(followers, 0, NULL)) END) 
+		   OVER(PARTITION BY socSource 
+				ORDER BY socSource, socDate 
+				ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS followers_fixed
+	FROM my_table
+
+Для этого можно их сначала записать в DBeaver, запустить по очереди, и далее исполнить например такой запрос:
+
+
+	SELECT query_start_time_microseconds,  query , 
+	query_duration_ms, read_rows, read_bytes, 
+	result_rows, result_bytes,  memory_usage,
+	formatReadableSize(read_bytes) AS read_bytes
+	FROM system.query_log 
+	WHERE type='QueryFinish' AND query like 'SELECT socSource, socDate, followers, LAST_VALUE(followers) FILTER%' OR
+					query like 'SELECT socSource, socDate, followers, LAST_VALUE(CASE WHEN%'
+	ORDER BY query_start_time_microseconds DESC
+	LIMIT 2
+
+ Здесь в SELECT запрошены интересующие данные, а в WHERE отобраны интересующие запросы согласно началу кода запроса. А в ORDER BY и LIMIT мы дополнительно себе помогаем и выводим информацию именно о двух последних запросах
