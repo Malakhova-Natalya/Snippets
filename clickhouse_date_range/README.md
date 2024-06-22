@@ -90,7 +90,7 @@
 	TG 		2024-03-08 	20360		20360
 	TG 		2024-03-09 	20349		20349
 
-Похожий вариант: **CASE WHEN ... ELSE ... END внутри функции LAT_VALUE**
+Похожий вариант: **CASE WHEN ... ELSE ... END внутри функции LAST_VALUE**
 
 
 	LAST_VALUE(CASE WHEN followers!=0 THEN followers 
