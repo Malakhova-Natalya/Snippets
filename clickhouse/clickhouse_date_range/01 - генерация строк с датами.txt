@@ -1,0 +1,43 @@
+Описание задачи:
+
+сгенерировать строки со всеми датами, когда есть дата начала и дата конца периода
+
+-------------------------------------------------------------------------------
+
+date_range_prepare as (
+    select groupArray(
+        toDate('2021-01-01') + INTERVAL number DAY
+        )
+    from numbers(
+        toUInt64(
+            dateDiff(
+                'day',
+                toDate('2021-01-01'),
+                toDate(now() - INTERVAL 1 DAY)
+            ) + 1
+        )
+    )
+),
+
+date_range as (
+    select arrayJoin(*) as days 
+    from date_range_prepare
+)
+
+------------------------------------------------------------------------------
+
+Google BigQuery :How to Generate Date Array by End of Month date
+
+https://stackoverflow.com/questions/66212159/google-bigquery-how-to-generate-date-array-by-end-of-month-date
+
+------------------------------------------------------------------------------
+
+macro get_intervals_between
+
+https://github.com/dbt-labs/dbt-utils/blob/main/macros/sql/date_spine.sql
+
+------------------------------------------------------------------------------
+Решение для ClichHouse в одну строку:
+
+dateAdd(period_start, arrayJoin(range(0, 1 + toUInt16(date_diff('day', period_start, period_end)))))
+
