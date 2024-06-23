@@ -15,7 +15,7 @@
 
 **ClickHouse - на ходу отобрать колонки по условию**: [COLUMNS('regexp')](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse/clickhouse_columns_regexp/README.md) yes
 
-**ClickHouse - сгенерировать строки с датами, имея дату начала и дату конца периода**: [варианты](https://github.com/Malakhova-Natalya/Snippets/tree/main/clickhouse_date_range)
+**ClickHouse - сгенерировать строки с датами, имея дату начала и дату конца периода**: [варианты](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse/clickhouse_date_range/README.md) yes
 
 **ClickHouse - заменить нулевые строки последним значением**: [задача про подписчиков](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_date_range/README.md#clickhouse-заменить-пропуски-последним-значением)
 
