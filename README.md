@@ -29,3 +29,4 @@
 
 **Как разобраться в API - Airbyte**: [разбор рабочего запроса по API к Airbyte](https://github.com/Malakhova-Natalya/Snippets/tree/main/other/API/Airbyte) 
 
+**Как запустить контейнер из Docker Desktop**: [мини-инструкция на примере ClickHouse](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/docker_desktop/README.md)
