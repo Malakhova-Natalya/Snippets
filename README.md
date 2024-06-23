@@ -7,7 +7,7 @@
 
 **DBT - как скачать и запустить dbt-проект с гитхаба**: [последовательность действий](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/README.md) yes
 
-**DBT - как изменить значение schema**: [разбор](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt_how_to_change_schema)
+**DBT - как изменить значение schema**: [разбор](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt/dbt_how_to_change_schema) yes
 
 **DBT - как исправить ошибки, разбор на примере Enum8**: [разбор](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt_error_Enum8)
 
