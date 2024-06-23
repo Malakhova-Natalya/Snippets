@@ -5,7 +5,7 @@
 
 **Удалить папки/файлы, которые не удаляются**: [2 варианта](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/remove_file/README.md) yes
 
-**DBT - как скачать и запустить dbt-проект с гитхаба**: [последовательность действий](https://github.com/Malakhova-Natalya/Simple_scenarios/tree/main/start_dbt_project_from_github)
+**DBT - как скачать и запустить dbt-проект с гитхаба**: [последовательность действий](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/README.md) yes
 
 **DBT - как изменить значение schema**: [разбор](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt_how_to_change_schema)
 
