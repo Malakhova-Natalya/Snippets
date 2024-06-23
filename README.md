@@ -11,7 +11,7 @@
 
 **DBT - как исправить ошибки, разбор на примере Enum8**: [разбор](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_error_Enum8/README.md) yes
 
-**DBT - как запустить и посмотреть документацию проекта**: [разбор - начало](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt_docs/README.md)
+**DBT - как запустить и посмотреть документацию проекта**: [разбор - начало](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt/dbt_docs) yes ✍️
 
 **ClickHouse - на ходу отобрать колонки по условию**: [COLUMNS('regexp')](https://github.com/Malakhova-Natalya/Snippets/tree/main/clickhouse_columns_regexp)
 
