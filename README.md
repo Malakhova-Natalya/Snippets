@@ -23,9 +23,9 @@
 
 ### Other
 
-**Добавить новую таблицу в базу данных**: [3 простых сценария](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/new_table/README.md) 
+**Как добавить новую таблицу в базу данных**: [3 простых сценария](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/new_table/README.md) 
 
-**Удалить папки/файлы, которые не удаляются**: [2 варианта](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/remove_file/README.md) 
+**Как удалить папки/файлы, которые не удаляются**: [2 варианта](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/remove_file/README.md) 
 
-**API - Airbyte**: [разбор рабочего запроса по API к Airbyte](https://github.com/Malakhova-Natalya/Snippets/tree/main/other/API/Airbyte) 
+**Как разобраться в API - Airbyte**: [разбор рабочего запроса по API к Airbyte](https://github.com/Malakhova-Natalya/Snippets/tree/main/other/API/Airbyte) 
 
