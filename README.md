@@ -3,7 +3,7 @@
 
 **Добавить новую таблицу в базу данных**: [3 простых сценария](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/new_table/README.md) yes
 
-**Удалить папки/файлы, которые не удаляются**: [2 варианта](https://github.com/Malakhova-Natalya/Simple_scenarios/tree/main/remove_file)
+**Удалить папки/файлы, которые не удаляются**: [2 варианта](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/remove_file/README.md) yes
 
 **DBT - как скачать и запустить dbt-проект с гитхаба**: [последовательность действий](https://github.com/Malakhova-Natalya/Simple_scenarios/tree/main/start_dbt_project_from_github)
 
