@@ -1,7 +1,7 @@
 ## Как разбираться с редкими/непонятными ошибками dbt (на примере ошибки Enum8)
 Если при запуске моделей dbt появляется ошибка такого рода:
 
-![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt_error_Enum8/dbt%20-%20error%20Enum8.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_error_Enum8/dbt%20-%20error%20Enum8.png)
 
 проверьте, в каком терминале вы работаете - возможно, в powershell + у вас не включено облачное окружение Python?
 
@@ -11,7 +11,7 @@
 2. Активируем облачное окружение python
 
 Вот пример моей инструкции из реального проекта:
-![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt_error_Enum8/ubuntu%20%2B%20python.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_error_Enum8/ubuntu%20%2B%20python.png)
 
 Если ошибка не проходит, возможно, дело в **версии ПО**, например, ClickHouse.
 Проверить версию ClickHouse можно перейдя в → DBeaver → SQL-запрос в интересующей БД:
@@ -26,7 +26,7 @@
 
 может выдать результат в разном формате. Например, для моих версий ClickHouse это формат String:
 
-![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt_error_Enum8/table_type.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_error_Enum8/table_type.png)
 
 а для других версий это может быть Enum8, при чтении которого в некоторых макросах могут появляться проблемы.
 
@@ -40,7 +40,7 @@
 
 и меняем ему формат вывода на String например вот так:
 
-![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt_error_Enum8/get_table_types_sql.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_error_Enum8/get_table_types_sql.png)
 
         {% macro default__get_table_types_sql() %}
             case toString(table_type)
