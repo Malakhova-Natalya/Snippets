@@ -43,7 +43,7 @@ https://clickhouse.com/docs/ru/sql-reference/statements/select
 
 ----------------------------------------------------------------
 
-**Моё решение**: [здесь](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_columns_regexp/01%20-%20описание%20задачи%20COLUMNS(regexp).txt)
+**Моё решение**: [здесь](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse/clickhouse_columns_regexp/01%20-%20описание%20задачи%20COLUMNS(regexp).txt)
 
 ----------------------------------------------------------------
 
