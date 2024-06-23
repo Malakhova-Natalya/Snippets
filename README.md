@@ -17,7 +17,7 @@
 
 **ClickHouse - сгенерировать строки с датами, имея дату начала и дату конца периода**: [варианты](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse/clickhouse_date_range/README.md) yes
 
-**ClickHouse - заменить нулевые строки последним значением**: [задача про подписчиков](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_date_range/README.md#clickhouse-заменить-пропуски-последним-значением)
+**ClickHouse - заменить нулевые строки последним значением**: [задача про подписчиков](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse/clickhouse_last_value/README.md) yes
 
 **ClickHouse - сравнить запросы**: [пример запроса к system.query_log](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_date_range/README.md#clickhouse-сравнить-запросы)
 
