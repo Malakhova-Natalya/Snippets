@@ -3,22 +3,22 @@
 
 **Шаги**:
 - заходим на гитхаб проекта - Code -> SSH -> копируем ссылку на репозиторий
-    
-![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/01%20git%20clone.png)
+
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/01%20git%20clone.png)
 
 - заходим, например, в Visual Studio Code -> Terminal Ubuntu-22.04 (WSL)
 - переходим по адресу, куда будем скачивать репозиторий. Например, у меня это /home/natalia/
 - выполняем команду git clone <скопированная ссылка на репозиторий>
 - далее при попытке запуска проекта (любой команды dbt, например dbt deps) мы можем увидеть ошибку доступа: Permission denied
  
-![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/02%20permission%20denied.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/02%20permission%20denied.png)
 - задаём доступ рекурсивно с помощью команды:
 
  
          sudo chmod <три цифры уровня доступа> -R /home/natalia/<название скачанной папки с dbt-проектом>
 
   
-![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/03%20sudo%20chmod%20755%20-R.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/03%20sudo%20chmod%20755%20-R.png)
 
 Три цифры потому что задаём доступы для: Owner, Group, Others
 
@@ -41,12 +41,12 @@
 
 - если далее при попытке запустить проект встречаем ошибки, например, такие: (что в итоге даёт could not run dbt)
   
-![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/04%20errors.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/04%20errors.png)
 
 - то вызываем команду
               dbt debug
 
-![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/05%20dbt%20debug.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/05%20dbt%20debug.png)
 
   с помощью этой команды можно понять, где что-то не сходится. 
   
@@ -54,20 +54,20 @@
 
 - в данном примере с помощью команды cat мы посмотрим содержание файла profiles.yml и отредактируем значение профиля в dbt_project.yml, чтобы всё сходилось
 
-![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/06%20cat%20dbt_local.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/06%20cat%20dbt_local.png)
 
 - если в dbt-проекте всё стало верно, то команда debug, проверяющая отсутствие ошибок,
   
           dbt debug
   отработает успешно
 
-![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/07%20dbt%20debug.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/07%20dbt%20debug.png)
 
 - далее нужно установить зависимости при помощи команды
   
           dbt deps
 
-![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/08%20dbt%20deps.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/08%20dbt%20deps.png)
 
 если с проектом всё в порядке, она тоже отработает успешно
 
@@ -76,4 +76,4 @@
           dbt run
 но это слишком экстремально, лучше запускать отдельную часть проекта, а не весь его целиком :-)
 
-![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/start_dbt_project_from_github/09%20dbt%20run.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/09%20dbt%20run.png)
