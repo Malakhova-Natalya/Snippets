@@ -8,14 +8,14 @@
   - добавляем файл csv, например, на гитхаб
   - открываем этот файл - он должен выглядеть, например, так:
 
-    ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/new_table/01%20-%20csv.png) 
+    ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/new_table/01%20-%20csv.png) 
   - в верхнем правом углу переходим в режим сырых данных - нажимаем Raw
   - в результате получим что-то в таком духе:
-    ![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/new_table/02%20-%20csv_raw.png)
+    ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/new_table/02%20-%20csv_raw.png)
   - отсюда надо скопировать ссылку из адресной строки наверху (всю целиком, вместе с .csv на конце, если оно есть)
   - далее переходим в DBeaver -> Редактор SQL -> Новый редактор SQL (для нужной БД)
   - пишем и последовательно выполняем скрипт из двух частей: создание таблицы, наполнение её данными. В этом скрипте нам пригодится ссылка из предыдущего шага.
-	Скрипт должен быть, например, таким: [скрипт создания и наполнения таблицы](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/new_table/03%20-%20script.txt)
+	Скрипт должен быть, например, таким: [скрипт создания и наполнения таблицы](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/new_table/03%20-%20script.txt)
 
 Однако, если это рабочая задача, у БД могут быть ограничения прав. Поэтому может быть ошибка, например: 
 
@@ -30,23 +30,23 @@
 **Шаги**:
   - БД -> схема -> правой кнопкой мыши "Таблицы" -> "Импорт данных"
 
-![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/new_table/04%20-%20DBeaver%20импорт%20данных.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/new_table/04%20-%20DBeaver%20импорт%20данных.png)
   - исходный формат - csv
 
-![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/new_table/05%20-%20DBeaver%20импорт%20данных%2001%20исходный%20формат.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/new_table/05%20-%20DBeaver%20импорт%20данных%2001%20исходный%20формат.png)
   - выбрать входной файл
 
-![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/new_table/06%20-%20DBeaver%20импорт%20данных%2002%20входные%20файлы.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/new_table/06%20-%20DBeaver%20импорт%20данных%2002%20входные%20файлы.png)
   - соответствие столбцов - можно по умолчанию, а можно:
 
 	- изменить название цели (как будет называться таблица) - наверху в столбце **Цель**
 	- изменить формат данных в столбцах - сбоку в разделе **Configure...**
 	
  
-![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/new_table/07%20-%20DBeaver%20импорт%20данных%2003%20соответствие%20столбцов.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/new_table/07%20-%20DBeaver%20импорт%20данных%2003%20соответствие%20столбцов.png)
   - настройки загрузки данных - можно по умолчанию
 
-![cover](https://github.com/Malakhova-Natalya/Simple_scenarios/blob/main/new_table/08%20-%20DBeaver%20импорт%20данных%2004%20настройки%20загрузки%20данных.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/new_table/08%20-%20DBeaver%20импорт%20данных%2004%20настройки%20загрузки%20данных.png)
 
 После этого данные будут загружены в БД.
 
