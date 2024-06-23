@@ -1,7 +1,7 @@
 # Snippets
 Учебные/рабочие задачи, ситуации и пошаговые подходы к их решению
 
-**Добавить новую таблицу в базу данных**: [3 простых сценария](https://github.com/Malakhova-Natalya/Simple_scenarios/tree/main/new_table)
+**Добавить новую таблицу в базу данных**: [3 простых сценария](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/new_table/README.md) yes
 
 **Удалить папки/файлы, которые не удаляются**: [2 варианта](https://github.com/Malakhova-Natalya/Simple_scenarios/tree/main/remove_file)
 
