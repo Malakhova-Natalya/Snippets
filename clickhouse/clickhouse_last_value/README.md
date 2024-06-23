@@ -16,7 +16,7 @@
 	TG 		2024-03-08 	20360		
 	TG 		2024-03-09 	20349		
  
-Сначала мы генерируем даты и присоединяем даты без пропусков к основным данным. (Варианты решения [здесь](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse_date_range/01%20-%20генерация%20строк%20с%20датами.txt)).
+Сначала мы генерируем даты и присоединяем даты без пропусков к основным данным. (Варианты решения [здесь](https://github.com/Malakhova-Natalya/Snippets/tree/main/clickhouse/clickhouse_date_range)).
 
 Получается вот так:
 
