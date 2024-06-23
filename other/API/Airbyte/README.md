@@ -4,7 +4,7 @@
 
 ## Разбор элементов работающего запроса
 
-![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/API/Airbyte/API%20Airbyte%20разбор%20запроса.png)
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/API/Airbyte/API%20Airbyte%20разбор%20запроса.png)
 
 Документация Airbyte по API: https://airbyte-public-api-docs.s3.us-east-2.amazonaws.com/rapidoc-api-docs.html
 
@@ -12,7 +12,7 @@
 
 Например, можно работать в Visual Studio Code. Открываем Terminal --> New Terminal --> Ubuntu (wsl)
 
-Для более плотной работы разработчики советуют использовать postman/insomnia - кратко что это описано [здесь](https://github.com/Malakhova-Natalya/Snippets/tree/main/API).
+Для более плотной работы разработчики советуют использовать postman/insomnia - кратко что это описано [здесь](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/API).
 
 
 ## Примеры кода (анонимная версия)
