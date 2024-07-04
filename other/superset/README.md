@@ -89,7 +89,7 @@
         SELECT date, Source, factFollowers, factFollowers_fixed, 
         ROW_NUMBER () OVER (PARTITION BY Source ORDER BY date DESC) AS _rn
         FROM my_table
-        WHERE date >= toDate('{{ from_dttm }}') and date < toDate('{{ to_dttm }}') 👀
+        WHERE date >= toDate('{{ from_dttm }}') and date < toDate('{{ to_dttm }}') 👀👀👀
 
 тогда при работе фильтра с датой поля from_dttm и to_dttm заполняются выбранными значениями (например, '2024-07-01' и '2024-07-04'), и в целом запрос начинает работать как нужно:
 
