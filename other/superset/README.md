@@ -42,6 +42,6 @@
         
 Чтобы можно было по условию _rn=1 отобрать нужные строки:
 
-        date           Source  factFollowers   factFollowers_fixed     _rn
+    date           Source  factFollowers   factFollowers_fixed     _rn
     2024-07-03     TG      0	       55917                   1
     2024-07-03     VK      503372	       503372                  1
