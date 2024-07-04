@@ -31,6 +31,6 @@
 
 **Как запустить контейнер из Docker Desktop**: [мини-инструкция на примере ClickHouse](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/docker_desktop/README.md)
 
-**Как добавить фильтр внутрь виртуальной таблицы в Superset**: [задача про суммирование подписчиков за последнюю дату - график big number](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/superset/README.md)
+**Как добавить jinja-фильтр внутрь виртуальной таблицы в Superset**: [задача про суммирование подписчиков за последнюю дату](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/superset/README.md)
 
 
