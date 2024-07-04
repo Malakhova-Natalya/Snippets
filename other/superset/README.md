@@ -45,3 +45,14 @@
     date           Source  factFollowers   factFollowers_fixed     _rn
     2024-07-03     TG      0	       55917                   1
     2024-07-03     VK      503372	       503372                  1
+
+Итоговый запрос в таком случае выглядел бы, например. так:
+
+    SELECT SUM(factFollowers_fixed) FILTER(WHERE _rn=1) as _max_factFollowers 
+    FROM (
+        SELECT date, Source, factFollowers, factFollowers_fixed, 
+        ROW_NUMBER () OVER (PARTITION BY Source ORDER BY date DESC) AS _rn
+        FROM my_table
+        WHERE date >= toDate('2024-07-01') AND date < toDate('2024-07-04')
+        ORDER BY 2, 1
+    )
