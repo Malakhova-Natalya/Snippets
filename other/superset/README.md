@@ -30,4 +30,13 @@
         WHERE date >= toDate('2024-07-01') AND date < toDate('2024-07-04')
         ORDER BY 2, 1
 
+И получить:
+
+    date           Source  factFollowers   factFollowers_fixed _rn
+    2024-07-01     TG      55917	       55917 3
+    2024-07-02     TG      0	       55917 2
+    2024-07-03     TG      0	       55917 1
+    2024-07-01     VK      503390	       503390 3
+    2024-07-02     VK      503384	       503384 2
+    2024-07-03     VK      503372	       503372 1
         
