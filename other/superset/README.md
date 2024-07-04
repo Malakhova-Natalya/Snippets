@@ -22,7 +22,7 @@
 
 Как нам указать, что нас интересует последняя дата?
 
-Можно сделать вот так:
+Например, можно использовать ROW_NUMBER() :
 
         SELECT date, Source, factFollowers, factFollowers_fixed, 
         ROW_NUMBER () OVER (PARTITION BY Source ORDER BY date DESC) AS _rn
