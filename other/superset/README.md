@@ -63,7 +63,7 @@
         ROW_NUMBER () OVER (PARTITION BY Source ORDER BY date DESC) AS _rn
         FROM my_table
     ) AS virtual_table
-    WHERE date >= toDate('2024-07-01') AND date < toDate('2024-07-04') 
+    WHERE date >= toDate('2024-07-01') AND date < toDate('2024-07-04') 👀
 
     
 Как же нам сделать так, чтобы фильтр даты был внутри виртуальной таблицы? То есть чтобы в итоге запрос выглядел, например, вот так:
@@ -73,7 +73,7 @@
         SELECT date, Source, factFollowers, factFollowers_fixed, 
         ROW_NUMBER () OVER (PARTITION BY Source ORDER BY date DESC) AS _rn
         FROM my_table
-        **WHERE date >= toDate('2024-07-01') AND date < toDate('2024-07-04')** 
+        WHERE date >= toDate('2024-07-01') AND date < toDate('2024-07-04') 👀
     ) AS virtual_table
 
 Ответ прост: можно использовать jinja-фильтры!
