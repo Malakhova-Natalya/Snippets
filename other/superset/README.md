@@ -6,7 +6,7 @@
 
 Например, у нас есть такие данные:
 
-    date        Source  factFollowers   factFollowers_fixed
+    date       Source  factFollowers   factFollowers_fixed
     2024-07-01	OK	    95573	        95573
     2024-07-02	OK	    95580	        95580
     2024-07-03	OK	    95580	        95580
