@@ -1,6 +1,6 @@
 ## Superset
 
-Как добавить фильтр даты внутрь виртуальной таблицы
+### Как добавить фильтр даты внутрь виртуальной таблицы
 
 Предположим, у нас есть задача сделать график big number, который показывал бы сумму подписчиков на текущий день (последнюю дату). При этом на график должны действовать фильтры по дате и по источнику (соцсети).
 
@@ -46,13 +46,57 @@
     2024-07-03     TG      0	       55917                   1
     2024-07-03     VK      503372	       503372                  1
 
-Итоговый запрос в таком случае выглядел бы, например. так:
+Итоговый запрос в таком случае выглядел бы, например, так:
 
     SELECT SUM(factFollowers_fixed) FILTER(WHERE _rn=1) as _max_factFollowers 
     FROM (
         SELECT date, Source, factFollowers, factFollowers_fixed, 
         ROW_NUMBER () OVER (PARTITION BY Source ORDER BY date DESC) AS _rn
         FROM my_table
-        WHERE date >= toDate('2024-07-01') AND date < toDate('2024-07-04')
-        ORDER BY 2, 1
-    )
+    ) AS virtual_table
+
+Но если мы будем использовать такое в Суперсете, то график будет показывать 0 для всех других дат, кроме последней. Это происходит потому что при добавлении фильтра с датами  выбранный диапазон  указывается уже после расчёта ROW_NUMBER():
+
+    SELECT SUM(factFollowers_fixed) FILTER(WHERE _rn=1) as _max_factFollowers 
+    FROM (
+        SELECT date, Source, factFollowers, factFollowers_fixed, 
+        ROW_NUMBER () OVER (PARTITION BY Source ORDER BY date DESC) AS _rn
+        FROM my_table
+    ) AS virtual_table
+    WHERE date >= toDate('2024-07-01') AND date < toDate('2024-07-04') 
+
+    
+Как же нам сделать так, чтобы фильтр даты был внутри виртуальной таблицы? То есть чтобы в итоге запрос выглядел, например, вот так:
+
+    SELECT SUM(factFollowers_fixed) FILTER(WHERE _rn=1) as _max_factFollowers 
+    FROM (
+        SELECT date, Source, factFollowers, factFollowers_fixed, 
+        ROW_NUMBER () OVER (PARTITION BY Source ORDER BY date DESC) AS _rn
+        FROM my_table
+        WHERE date >= toDate('2024-07-01') AND date < toDate('2024-07-04') 
+    ) AS virtual_table
+
+Ответ прост: можно использовать jinja-фильтры!
+
+То есть нашу виртуальную таблицу мы записываем не так:
+
+        SELECT date, Source, factFollowers, factFollowers_fixed, 
+        ROW_NUMBER () OVER (PARTITION BY Source ORDER BY date DESC) AS _rn
+        FROM my_table
+
+а вот так:
+
+        SELECT date, Source, factFollowers, factFollowers_fixed, 
+        ROW_NUMBER () OVER (PARTITION BY Source ORDER BY date DESC) AS _rn
+        FROM my_table
+        WHERE date >= toDate('{{ from_dttm }}') and date < toDate('{{ to_dttm }}')
+
+тогда при работе фильтра с датой поля from_dttm и to_dttm заполняются выбранными значениями (например, '2024-07-01' и '2024-07-04'), и в целом запрос начинает работать как нужно:
+
+    SELECT SUM(factFollowers_fixed) FILTER(WHERE _rn=1) as _max_factFollowers 
+    FROM (
+        SELECT date, Source, factFollowers, factFollowers_fixed, 
+        ROW_NUMBER () OVER (PARTITION BY Source ORDER BY date DESC) AS _rn
+        FROM my_table
+        WHERE date >= toDate('2024-07-01') AND date < toDate('2024-07-04') 
+    ) AS virtual_table
