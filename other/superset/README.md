@@ -100,3 +100,18 @@
         FROM my_table
         WHERE date >= toDate('2024-07-01') AND date < toDate('2024-07-04') 👀
     ) AS virtual_table
+
+P.S. если нужна виртуальная таблица только для одного графика, она может быть ещё короче:
+
+    SELECT Source, factFollowers_fixed
+    FROM my_table
+    WHERE date = toDate('{{ to_dttm }}')
+
+И запрос к ней для графика выглядел бы так:
+
+    SELECT SUM(factFollowers_fixed) AS factFollowers 
+    FROM (
+        SELECT Source, factFollowers_fixed
+        FROM my_table
+        WHERE date = toDate('{{ to_dttm }}')
+    ) AS virtual_table
