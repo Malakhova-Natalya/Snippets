@@ -35,11 +35,11 @@ https://docs.getdbt.com/reference/commands/cmd-docs
 Что можно делать на этом сайте документации?
 
 
-Например, здесь можно выбрать интересующую вас таблицу (в этом примере dataset_event_table), и нажать на "View Lineage Graph" (зелёненький значок в правом нижнем углу). Откроется граф ближайшего окружения выбранной таблицы. 
+Например, здесь можно выбрать интересующую вас таблицу (в этом примере dataset_event_table), и нажать на "View Lineage Graph" (зелёненький значок в правом нижнем углу). 
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_docs/http_01.png)
 
-Если же вы хотите посмотреть более подробно, можно перейти в полноэкранный режим - View Fullscreen
+Откроется граф ближайшего окружения выбранной таблицы.  Если же вы хотите посмотреть более подробно, можно перейти в полноэкранный режим - View Fullscreen
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_docs/http_02.png)
 
