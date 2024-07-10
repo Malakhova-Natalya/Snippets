@@ -13,6 +13,8 @@ https://docs.getdbt.com/reference/commands/cmd-docs
 
     dbt docs generate
 
+В папке target сформируется файл catalog.json.
+
 Далее вызываем команду, чтобы отобразить полученную документацию, например, локально:
 
     dbt docs serve --port 8001
