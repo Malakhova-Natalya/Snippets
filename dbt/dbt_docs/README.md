@@ -21,4 +21,15 @@ https://docs.getdbt.com/reference/commands/cmd-docs
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_docs/dbt_docs_generate.png)
 
+После команды docs serve появляется ссылка, по которой нужно перейти (например http://localhost:8001)
 
+После того, как вы перешли, нужно подождать или перезагрузить страницу, и перед вами откроется документация вашего проекта. Выглядеть она может примерно так:
+
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_docs/http_01.png)
+
+Например, здесь можно выбрать интересующую вас таблицу, и нажать на "View Lineage Graph" (в правом нижнем углу). Откроется граф ближайшего окружения выбранной таблицы. 
+
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_docs/http_02.png)
+
+Если же вы хотите посмотреть более подробно, можно перейти в полноэкранный режим
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_docs/http_03.png)
