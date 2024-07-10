@@ -19,4 +19,6 @@ https://docs.getdbt.com/reference/commands/cmd-docs
 
 Выглядит всё это, например, вот так:
 
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_docs/dbt_docs_generate.png)
+
 
