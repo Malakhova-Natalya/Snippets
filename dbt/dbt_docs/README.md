@@ -46,3 +46,10 @@ https://docs.getdbt.com/reference/commands/cmd-docs
 В полноэкранном режиме есть не только отображение всех таблиц, но и внизу страницы - различные настройки, которыми можно пользоваться как фильтрами:
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_docs/http_03.png)
+
+Всем этим можно пользоваться, пока вы не вышли в командной строке. (Press Ctrl+C to exit). Если вы вышли, то, закрыв страницу http://localhost:8001, снова на неё попасть не выйдет. Нужно будет снова в командной строке выполнить команду
+
+    dbt docs serve --port 8001
+
+
+    
