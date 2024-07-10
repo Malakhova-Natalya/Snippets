@@ -31,5 +31,6 @@ https://docs.getdbt.com/reference/commands/cmd-docs
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_docs/http_02.png)
 
+В полноэкранном режиме есть не только отображение всех таблиц, но и внизу страницы - различные настройки, которыми можно пользоваться как фильтрами:
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_docs/http_03.png)
