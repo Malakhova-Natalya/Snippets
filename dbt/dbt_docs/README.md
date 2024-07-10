@@ -27,7 +27,7 @@ https://docs.getdbt.com/reference/commands/cmd-docs
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_docs/http_01.png)
 
-Например, здесь можно выбрать интересующую вас таблицу, и нажать на "View Lineage Graph" (зелёненький значок в правом нижнем углу). Откроется граф ближайшего окружения выбранной таблицы. 
+Например, здесь можно выбрать интересующую вас таблицу (в этом примере dataset_event_table), и нажать на "View Lineage Graph" (зелёненький значок в правом нижнем углу). Откроется граф ближайшего окружения выбранной таблицы. 
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_docs/http_02.png)
 
