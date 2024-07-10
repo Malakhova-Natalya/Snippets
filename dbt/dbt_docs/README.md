@@ -9,6 +9,13 @@ https://docs.getdbt.com/reference/commands/cmd-docs
 
     dbt docs generate
 
+    
+Это будет работать, если в вашем проекте без ошибок отрабатывает команда:
+
+    dbt compile
+
+Иначе придётся сначала разобраться с теми проблемами, что мешают работе этой команды.
+    
 Отобразить:
 
     dbt docs serve --port 8001
