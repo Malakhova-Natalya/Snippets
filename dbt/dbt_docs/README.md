@@ -59,6 +59,9 @@ https://docs.getdbt.com/reference/commands/cmd-docs
 
 Вот структура моего проекта:
 
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_docs/folders_structure.png)
+
+
 Я могу сгенерировать документацию вот так
 
     ~/dbt-etlcraft-main$ dbt docs serve --port 8001
@@ -69,5 +72,5 @@ https://docs.getdbt.com/reference/commands/cmd-docs
 
 И от адреса зависит, какая документация у меня получится:
 
-
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_docs/address.png)
     
