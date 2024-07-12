@@ -77,3 +77,5 @@ https://docs.getdbt.com/reference/commands/cmd-docs
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_docs/address.png)
     
 **Вывод: лучше всего генерировать документацию в той папке, внутри которой лежит папка models.** Тогда в документации будут видны ваши модели.
+
+В данном примере в папку models я добавила ещё одну папку, внутри которой yaml-файл с exposures. Во втором варианте видно, что в документации отображаются и Exposures, и Projects.
