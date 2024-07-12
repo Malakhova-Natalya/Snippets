@@ -55,7 +55,7 @@ https://docs.getdbt.com/reference/commands/cmd-docs
 
 От адреса, по которому вы будете находиться, запуская команду docs generate, зависит, какая документация у вас получится. 
 
-Например, у меня есть проект dbt-etlcraft-main, и в его основе несколько высокоуровневых папок. Внутри одной из таких папок (integration_tests) лежим ещё одна папка (models), в которой есть свои папки с моделями dbt.
+Например, у меня есть проект dbt-etlcraft-main, и в его основе несколько высокоуровневых папок. Внутри одной из таких папок (integration_tests) лежим ещё одна папка (models), в которой, в свою очередь, уже есть свои папки непосредственно с моделями dbt.
 
 Вот структура моего проекта:
 
@@ -66,7 +66,7 @@ https://docs.getdbt.com/reference/commands/cmd-docs
 
     ~/dbt-etlcraft-main$ dbt docs serve --port 8001
 
-    или так
+или так
 
     ~/dbt-etlcraft-main/integration_tests$ dbt docs serve --port 8001
 
