@@ -51,5 +51,11 @@ https://docs.getdbt.com/reference/commands/cmd-docs
 
     dbt docs serve --port 8001
 
+### Детали
+
+От адреса, по которому вы будете находиться, запуская команду docs generate, зависит, какая документация у вас получится. 
+
+Например, у меня есть проект dbt-etlcraft-main, и вот структура его папок:
+
 
     
