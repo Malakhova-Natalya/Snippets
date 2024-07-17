@@ -21,6 +21,8 @@
 
 **DBT - как запустить и посмотреть документацию проекта**: [разбор](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt/dbt_docs)  
 
+**DBT - как запускать parse, compile, run с --var**: [разбор ошибки Unable to do partial parsing](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt/dbt_parse_compile_run_with_vars)
+
 ### Other
 
 **Как добавить новую таблицу в базу данных**: [3 простых сценария](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/new_table/README.md) 
