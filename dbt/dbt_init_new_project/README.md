@@ -25,3 +25,13 @@
 Что именно я делаю: Code → SSH → копирую ссылку. У меня это: 
 
     git@github.com:Malakhova-Natalya/dbt-tutorial.git
+
+Дальнейшие действия:
+
+- захожу в Visual Studio Code -> Terminal Ubuntu-22.04 (WSL)
+- перехожу по адресу, куда буду скачивать репозиторий. Например, у меня это /home/natalia/
+- выполняю команду
+- 
+        git clone git@github.com:Malakhova-Natalya/dbt-tutorial.git
+
+  
