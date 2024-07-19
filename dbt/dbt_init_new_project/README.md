@@ -63,4 +63,16 @@
 
     dbt --version
 
+Инициирую новый dbt-проект, используя команду init:
 
+    dbt init my_dbt_project
+
+Перехожу в директорию этого проекта:
+
+    cd my_dbt_project
+
+С помощью
+
+    pwd
+
+убеждаюсь, что всё на тех местах, как планировалось (home/natalia/dbt-tutorial/my_dbt_project).
