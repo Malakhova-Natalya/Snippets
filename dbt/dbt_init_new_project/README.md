@@ -16,7 +16,9 @@
 
 После этого мы можем посмотреть на этот пустой новый репозиторий:
 
-и теперь скачаем его себе на компьютер
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/02_empty_new_repository.png)
+
+и теперь скачаем его себе на компьютер через Code (зелёненькая кнопка).
 
 частично мы повторим шаги из раздела [Скачать и запустить dbt-проект с гитхаба](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/README.md)
 
