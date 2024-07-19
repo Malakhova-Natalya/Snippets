@@ -22,3 +22,6 @@
 
 Частично это повторение шагов из раздела [Скачать и запустить dbt-проект с гитхаба](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/README.md)
 
+Что именно я делаю: Code → SSH → копирую ссылку. У меня это: 
+
+  git@github.com:Malakhova-Natalya/dbt-tutorial.git
