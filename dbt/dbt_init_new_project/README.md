@@ -47,4 +47,8 @@
  
         git clone git@github.com:Malakhova-Natalya/dbt-tutorial.git
 
-  
+Все эти команды выглядят, например, вот так:
+
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/03_terminal.png)
+
+
