@@ -29,6 +29,10 @@
 
 **DBT - как запускать parse, compile, run с --var**: [разбор ошибки Unable to do partial parsing](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt/dbt_parse_compile_run_with_vars)
 
+### GitHub
+
+GitHub Desktop - что, если Fetch origin крутится бесконечно: простой лайфхак
+
 ### Other
 
 **Как добавить новую таблицу в базу данных**: [3 простых сценария](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/new_table/README.md) 
