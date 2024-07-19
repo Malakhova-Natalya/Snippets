@@ -10,3 +10,5 @@
 
 
 Снизу будет не такая приметная кнопка **Close pull request - вот ею и можно воспользоваться**, чтобы отменить нежелаемые вами изменения.
+
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/github/github_close_pull_request/01%20-%20Close%20pull%20request.png)
