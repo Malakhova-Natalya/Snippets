@@ -67,12 +67,19 @@
 
     dbt init my_dbt_project
 
-Перехожу в директорию этого проекта:
+Тут dbt может спросить, какую базу данных планируется использовать, предлагает доступные варианты и просит ввести номер:
 
-    cd my_dbt_project
+    Which database would you like to use?
+    [1] clickhouse
 
-С помощью
+    (Don't see the one you want? https://docs.getdbt.com/docs/available-adapters)
+
+    Enter a number:
+
+(выбор у меня небольшой, ввожу 1)
+
+После завершения установки можно ещё раз проверить, что всё на своих местах, как задумано - при помощи
 
     pwd
 
-убеждаюсь, что всё на тех местах, как планировалось (home/natalia/dbt-tutorial/my_dbt_project).
+(home/natalia/dbt-tutorial/my_dbt_project)
