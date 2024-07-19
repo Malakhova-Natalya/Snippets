@@ -8,3 +8,7 @@
 
 Поскольку ничего нового устанавливать не надо, обращусь к первой указанной здесь документации - Quickstart for dbt Core.
 
+Следуя инструкции, создаю репозиторий для своего нового проекта. Например, назову его dbt-tutorial, и делаю этот репозиторий открытым (публичным), выглядит это, например, вот так:
+
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/01_create_new_repository.png)
+
