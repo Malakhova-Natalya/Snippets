@@ -33,6 +33,8 @@
 
 **GitHub Desktop - что, если Fetch origin крутится бесконечно**: [простой лайфхак](https://github.com/Malakhova-Natalya/Snippets/blob/main/github/github_desktop_fetch_origin/README.md)
 
+**GitHub - как отменить нежелательные изменения**: [на каком шаге close pull request](https://github.com/Malakhova-Natalya/Snippets/blob/main/github/github_close_pull_request/README.md)
+
 ### Other
 
 **Как добавить новую таблицу в базу данных**: [3 простых сценария](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/new_table/README.md) 
