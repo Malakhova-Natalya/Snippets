@@ -76,9 +76,9 @@
 
     Enter a number:
 
-(выбор у меня небольшой, ввожу 1)
+(выбор у меня небольшой, ввожу 1). Dbt создаёт проект и предлагает несколько ссылок, где можно посмотреть документацию.
 
-После завершения установки в Visual Studio Code появится новое содержимое:
+После завершения установки в Visual Studio Code появляется новое содержимое:
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/06_dbt_init.png)
 
