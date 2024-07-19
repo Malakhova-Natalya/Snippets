@@ -82,4 +82,4 @@
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/06_dbt_init.png)
 
-
+Итак, новый dbt-проект инициирован, осталось добавить ему packages (меня интересует etlcraft).
