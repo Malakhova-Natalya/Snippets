@@ -24,4 +24,4 @@
 
 Что именно я делаю: Code → SSH → копирую ссылку. У меня это: 
 
-  git@github.com:Malakhova-Natalya/dbt-tutorial.git
+    git@github.com:Malakhova-Natalya/dbt-tutorial.git
