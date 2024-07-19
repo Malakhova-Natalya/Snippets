@@ -78,8 +78,8 @@
 
 (выбор у меня небольшой, ввожу 1)
 
-После завершения установки можно ещё раз проверить, что всё на своих местах, как задумано - при помощи
+После завершения установки в Visual Studio Code появится новое содержимое:
 
-    pwd
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/06_dbt_init.png)
 
-(home/natalia/dbt-tutorial/my_dbt_project)
+
