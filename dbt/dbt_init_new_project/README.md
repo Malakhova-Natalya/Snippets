@@ -55,7 +55,7 @@
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/04_folder_on_computer.png)
 
-Далее открываю эту папку - dbt-tutorial - в Visual Studio Code и подготавливаю Терминал к работе:
+Далее открываю эту папку - dbt-tutorial - в Visual Studio Code и подготавливаю Terminal к работе:
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/05_vscode_terminal.png)
 
