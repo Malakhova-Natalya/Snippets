@@ -59,4 +59,8 @@
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/05_vscode_terminal.png)
 
+Теперь можно дальше следовать инструкции из [Quickstart for dbt Core from a manual install](https://docs.getdbt.com/guides/manual-install?step=1) - я на шаге 3. Проверяю версию dbt:
+
+    dbt --version
+
 
