@@ -51,4 +51,8 @@
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/03_terminal.png)
 
+После выполнения команды git clone на компьютере появляется папка репозитория dbt-tutorial. В этом можно убедиться, перейдя по адресу, куда проводилось скачивание. Пока папка практически пустая - в ней только привязка к гитхабу - .git и файл с описанием репозитория README.md.
+
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/04_folder_on_computer.png)
+
 
