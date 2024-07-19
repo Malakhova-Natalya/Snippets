@@ -1,6 +1,6 @@
 ## GitHub Desktop завис на Fetch origin - что можно сделать?
 
-Один простой лайфхак.
+Один простой лайфхак решает эту проблему.
 
 Открываем GitHub Desktop → переходим в раздел Repository → Repository settings
 
