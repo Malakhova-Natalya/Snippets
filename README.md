@@ -15,7 +15,7 @@
 
 **DBT - как скачать и запустить dbt-проект с гитхаба**: [последовательность действий](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/README.md) 
 
-**DBT - как создать новый dbt-проект**: пример с использованием внутри проекта package etlcraft ✍️
+**DBT - как создать новый dbt-проект**: [пример с использованием внутри проекта package etlcraft](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt/dbt_init_new_project) ✍️
 
 **DBT - как скрыть папки dbt-проекта с гитхаба**: [мини-инструкция](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_how_to_gitignore/README.md)
 
