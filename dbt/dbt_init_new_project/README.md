@@ -59,7 +59,7 @@
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/05_vscode_terminal.png)
 
-Теперь можно дальше следовать инструкции из [Quickstart for dbt Core from a manual install](https://docs.getdbt.com/guides/manual-install?step=1) - я на шаге 3. Проверяю версию dbt:
+Проверяю версию dbt:
 
     dbt --version
 
@@ -67,7 +67,7 @@
 
     dbt init my_dbt_project
 
-Тут dbt может спросить, какую базу данных планируется использовать, предлагает доступные варианты и просит ввести номер:
+Тут dbt может спросить, какую базу данных планируется использовать, предлагает доступные варианты и просит ввести номер варианта:
 
     Which database would you like to use?
     [1] clickhouse
