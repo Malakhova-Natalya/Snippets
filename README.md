@@ -31,7 +31,7 @@
 
 ### GitHub
 
-GitHub Desktop - что, если Fetch origin крутится бесконечно: простой лайфхак
+**GitHub Desktop - что, если Fetch origin крутится бесконечно**: [простой лайфхак](https://github.com/Malakhova-Natalya/Snippets/blob/main/github/github_desktop_fetch_origin/README.md)
 
 ### Other
 
