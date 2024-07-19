@@ -30,21 +30,21 @@
 
 - захожу в Visual Studio Code -> Terminal Ubuntu-22.04 (WSL)
 - перехожу сразу в своего пользователя
-  
-        sudo su natalia
+
+    sudo su natalia
   
 и перехожу "домой" (то есть в стартовую директорию для пользователя)
 
-          cd ~
+    cd ~
           
 - убеждаюсь, что я нахожусь по адресу, куда буду скачивать репозиторий. Например, у меня это /home/natalia/ (эта самая стартовая директория для пользователя)
   
-      pwd
+    pwd
 
 убеждаюсь, что команда pwd выдаёт результат /home/natalia
 
 - выполняю команду
-- 
-        git clone git@github.com:Malakhova-Natalya/dbt-tutorial.git
+ 
+    git clone git@github.com:Malakhova-Natalya/dbt-tutorial.git
 
   
