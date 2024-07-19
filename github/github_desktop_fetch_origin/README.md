@@ -6,7 +6,7 @@
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/github/github_desktop_fetch_origin/01_Repository_settings.png)
 
-в разделе Remote в имеющейся строке вместо git вставляем https ссылку на ваш репозиторий
+в разделе Remote в имеющейся строке вместо git вставляем (и сохраняем) https ссылку на ваш репозиторий
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/github/github_desktop_fetch_origin/02_Repository_settings_remote.png)
 
