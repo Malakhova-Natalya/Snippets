@@ -27,7 +27,7 @@
 
 **DBT - как запустить и посмотреть документацию проекта**: [разбор](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt/dbt_docs)  
 
-**DBT - как добавить exposures в документацию**: ✍️✍️✍️
+**DBT - как добавить exposures в документацию**: [разбор](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt/dbt_exposures)
 
 **DBT - как запускать parse, compile, run с --var**: [разбор ошибки Unable to do partial parsing](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt/dbt_parse_compile_run_with_vars)
 
