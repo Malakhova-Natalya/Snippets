@@ -98,3 +98,11 @@ Exposures (экспозиции) - это описание в yaml-файле к
             description: Tell users about their favorite jaffles of the year
             depends_on: [ ref('fct_orders') ]
             owner: { email: summer-intern@jaffleshop.com }
+
+После того, как exposures прописаны (и без ошибок, например, нужно писать только существующие модели в ref() ) - можно генерировать документацию (надо быть в папке, внутри которой есть папка models):
+
+        dbt docs generate
+
+И отобразить её:
+
+        dbt docs serve --port 8001
