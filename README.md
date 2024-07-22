@@ -31,7 +31,7 @@
 
 ### GitHub
 
-**GitHub - способы взаимодействия**: CLI в VSCode, Source Control в VSCode, GitHub Desktop ✍️
+**GitHub - способы взаимодействия**: [варианты](https://github.com/Malakhova-Natalya/Snippets/tree/main/github/github_ways_of_interaction) 
 
 **GitHub Desktop - что, если Fetch origin крутится бесконечно**: [простой лайфхак](https://github.com/Malakhova-Natalya/Snippets/blob/main/github/github_desktop_fetch_origin/README.md)
 
