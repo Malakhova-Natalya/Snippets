@@ -20,11 +20,11 @@ Exposures (экспозиции) - это описание в yaml-файле к
 
 Далее внутри models/for_docs_generate **нужно создать yaml-файл с описаниями exposures**. Его можно назвать как угодно. Поскольку exposures можно прописывать в одном yaml-файле вместе с sources и models, я назову свой файл как-то нейтрально, например, project_properties.
 
-
+Судя по той же документации, содержимое yaml-файла должно быть заполнено по такому шаблону:
 
   version: 2
 
-exposures:
+  exposures:
   - name: <string_with_underscores>
     description: <markdown_string>
     type: {dashboard, notebook, analysis, ml, application}
@@ -47,3 +47,5 @@ exposures:
       enabled: true | false
 
   - name: ... # declare properties of additional exposures
+
+
