@@ -22,30 +22,30 @@ Exposures (экспозиции) - это описание в yaml-файле к
 
 Судя по той же документации, содержимое yaml-файла должно быть заполнено по такому шаблону:
 
-  version: 2
+    version: 2
 
-  exposures:
-  - name: <string_with_underscores>
-    description: <markdown_string>
-    type: {dashboard, notebook, analysis, ml, application}
-    url: <string>
-    maturity: {high, medium, low}  # Indicates level of confidence or stability in the exposure
-    tags: [<string>]
-    meta: {<dictionary>}
-    owner:
-      name: <string>
-      email: <string>
+    exposures:
+    - name: <string_with_underscores>
+      description: <markdown_string>
+      type: {dashboard, notebook, analysis, ml, application}
+      url: <string>
+      maturity: {high, medium, low}  # Indicates level of confidence or stability in the exposure
+      tags: [<string>]
+      meta: {<dictionary>}
+      owner:
+        name: <string>
+        email: <string>
     
-    depends_on:
-      - ref('model')
-      - ref('seed')
-      - source('name', 'table')
-      - metric('metric_name')
+      depends_on:
+        - ref('model')
+        - ref('seed')
+        - source('name', 'table')
+        - metric('metric_name')
       
-    label: "Human-Friendly Name for this Exposure!"
-    config:
-      enabled: true | false
+      label: "Human-Friendly Name for this Exposure!"
+      config:
+        enabled: true | false
 
-  - name: ... # declare properties of additional exposures
+    - name: ... # declare properties of additional exposures
 
 
