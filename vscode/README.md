@@ -39,3 +39,9 @@
 Linux команды:
 
 - https://ryanstutorials.net/linuxtutorial/cheatsheet.php
+
+Yandex Cloud
+
+- установить утилиту: https://yandex.cloud/en-ru/docs/cli/operations/install-cli?utm_referrer=https%3A%2F%2Fcdn.otus.ru%2F
+- почитать документацию об утилите: https://yandex.cloud/en-ru/docs/cli/cli-ref/
+- AWS CLI: https://yandex.cloud/en-ru/docs/storage/tools/aws-cli
