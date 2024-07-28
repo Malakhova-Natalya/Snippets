@@ -1,5 +1,6 @@
-## Как создать новый dbt-проект
+# Как создать новый dbt-проект
 
+## Шаг 1. git clone + dbt init
 Документация dbt: 
 - [Quickstart for dbt Core from a manual install](https://docs.getdbt.com/guides/manual-install?step=1)
 - [About dbt Core and installation](https://docs.getdbt.com/docs/core/installation-overview)
@@ -83,3 +84,5 @@
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/06_dbt_init.png)
 
 Итак, новый dbt-проект инициирован, осталось добавить ему packages (меня интересует etlcraft).
+
+## Шаг 2. dbt - profiles.yml
