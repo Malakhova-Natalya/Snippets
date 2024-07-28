@@ -51,4 +51,4 @@
 
 **Как добавить jinja-фильтр внутрь виртуальной таблицы в Superset**: [задача про суммирование подписчиков за последнюю дату](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/superset/README.md)
 
-**Объектно-ориентированное программирование**: [материалы и конспект](https://github.com/Malakhova-Natalya/Snippets/tree/main/other/oop)
+**Объектно-ориентированное программирование**: [ссылки на материалы и конспект](https://github.com/Malakhova-Natalya/Snippets/tree/main/other/oop)
