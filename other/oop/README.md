@@ -120,3 +120,29 @@
                 return f"Ручкой цвета '{self.color}' нельзя подписать документ."
             return f"Подписан документ."
 
+Для получения типа ручки нам нужно модифицировать метод __init__, добавив в него аргумент pen_type и сохранив его значение в атрибуте. Таким образом, нам нужно дополнить метод базового класса. Такая операция при наследовании называется расширением метода.
+
+При расширении методов необходимо вначале вызвать метод базового класса с помощью функции super().
+
+
+    class Pencil:
+
+        def __init__(self, color="серый"):
+            self.color = color
+
+        def draw_picture(self):
+            return f"Нарисован рисунок цветом '{self.color}'."
+
+
+    class Pen(Pencil):
+
+        def __init__(self, color, pen_type):
+            super().__init__(color=color)
+            self.pen_type = pen_type
+
+        def sign_document(self):
+            if self.color not in ("синий", "чёрный", "фиолетовый"):
+                return f"Ручкой цвета '{self.color}' нельзя подписать документ."
+            elif self.pen_type == "гелевая":
+                return f"Ручкой типа '{self.pen_type}' нельзя подписать документ."
+            return f"Подписан документ."
