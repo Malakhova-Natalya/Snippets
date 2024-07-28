@@ -36,3 +36,6 @@
 
 Открыть/закрыть терминал.
 
+Linux команды:
+
+- https://ryanstutorials.net/linuxtutorial/cheatsheet.php
