@@ -189,3 +189,103 @@
 **Специальных методов** в Python довольно много. Они нужны для описания взаимодействия с объектами при помощи стандартных операций и встроенных функций. Описание специальных методов называется **перегрузкой операторов** (operator overloading).
 
 Имена специальных методов выделены слева и справа двумя символами подчёркивания. Как можно заметить, метод __init__ также является специальным.
+
+### 5.3. Модель исключений Python. Try, except, else, finally. Модули
+
+    start = input()
+    end = input()
+    # Метод lstrip("-"), удаляющий символы "-" в начале строки, нужен для учёта
+    # отрицательных чисел, иначе isdigit() вернёт для них False
+    if not (start.lstrip("-").isdigit() and end.lstrip("-").isdigit()):
+        print("
+        ввести два числа.")
+    else:
+        interval = range(int(start), int(end) + 1)
+        if 0 in interval:
+            print("Диапазон чисел содержит 0.")
+        else:
+            print(";".join(str(1 / x) for x in interval))
+    
+Подход, который был нами применён для предотвращения ошибок, называется **Look Before You Leap (LBYL), или «Посмотри перед прыжком»**. В программе, реализующей такой подход, проверяются возможные условия возникновения ошибок до исполнения основного кода.
+
+Существует другой подход для работы с ошибками: **Easier to Ask Forgiveness than Permission (EAFP), или «Проще попросить прощения, чем разрешения»**. В этом подходе сначала исполняется код, а в случае возникновения ошибок происходит их обработка. Подход EAFP реализован в Python в виде обработки исключений.
+    
+Исключения в Python являются классами ошибок. В Python есть много стандартных исключений. Они имеют определённую иерархию за счёт механизма наследования классов. В документации Python версии 3.10.8 приводится следующее дерево иерархии стандартных исключений:
+
+
+        BaseException
+     +-- SystemExit
+     +-- KeyboardInterrupt
+     +-- GeneratorExit
+     +-- Exception
+          +-- StopIteration
+          +-- StopAsyncIteration
+          +-- ArithmeticError
+          |    +-- FloatingPointError
+          |    +-- OverflowError
+          |    +-- ZeroDivisionError
+          +-- AssertionError
+          +-- AttributeError
+          +-- BufferError
+          +-- EOFError
+          +-- ImportError
+          |    +-- ModuleNotFoundError
+          +-- LookupError
+          |    +-- IndexError
+          |    +-- KeyError
+          +-- MemoryError
+          +-- NameError
+          |    +-- UnboundLocalError
+          +-- OSError
+          |    +-- BlockingIOError
+          |    +-- ChildProcessError
+          |    +-- ConnectionError
+          |    |    +-- BrokenPipeError
+          |    |    +-- ConnectionAbortedError
+          |    |    +-- ConnectionRefusedError
+          |    |    +-- ConnectionResetError
+          |    +-- FileExistsError
+          |    +-- FileNotFoundError
+          |    +-- InterruptedError
+          |    +-- IsADirectoryError
+          |    +-- NotADirectoryError
+          |    +-- PermissionError
+          |    +-- ProcessLookupError
+          |    +-- TimeoutError
+          +-- ReferenceError
+          +-- RuntimeError
+          |    +-- NotImplementedError
+          |    +-- RecursionError
+          +-- SyntaxError
+          |    +-- IndentationError
+          |         +-- TabError
+          +-- SystemError
+          +-- TypeError
+          +-- ValueError
+          |    +-- UnicodeError
+          |         +-- UnicodeDecodeError
+          |         +-- UnicodeEncodeError
+          |         +-- UnicodeTranslateError
+          +-- Warning
+               +-- DeprecationWarning
+               +-- PendingDeprecationWarning
+               +-- RuntimeWarning
+               +-- SyntaxWarning
+               +-- UserWarning
+               +-- FutureWarning
+               +-- ImportWarning
+               +-- UnicodeWarning
+               +-- BytesWarning
+               +-- EncodingWarning
+               +-- ResourceWarning
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                                                    
+                                
