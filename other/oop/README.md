@@ -7,3 +7,5 @@
 - [Хендбук по Python от Яндекс Образования](https://education.yandex.ru/handbook/python) бесплатные материалы (теория + практика)
 
 
+Мой разбор: 
+- [Конспект-разбор на основе хендбука](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/oop/yandex_education_handbook.md)
