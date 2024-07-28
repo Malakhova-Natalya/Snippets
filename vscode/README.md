@@ -10,7 +10,7 @@
 
 Также есть, например, расширение Better Jinja. И в целом по поиску можно найти много разных расширений под свои нужды.
 
-- zsh
+- zsh - z shell - оболочка
 
 Установить: https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
 
