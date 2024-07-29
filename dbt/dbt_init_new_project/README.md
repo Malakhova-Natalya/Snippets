@@ -109,3 +109,13 @@
     ERROR: Runtime Error
       Could not find profile named 'my_dbt_project'
 
+Итак, в папке .dbt есть файл profiles.yml. У меня один профиль (значение записано в первой строке), и я для этого проекта тоже буду использовать его - dbt_local. Так что в dbt_project.yml  в строке profile меняю значение:
+
+        profile: 'dbt_local'
+
+Теперь, когда в dbt_project.yml и в .dbt/profile одно значение профиля, тестовые модели отрабатывают успешно.
+
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/07_profile.png)
+
+
+    
