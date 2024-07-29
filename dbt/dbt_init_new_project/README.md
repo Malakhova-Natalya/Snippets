@@ -85,7 +85,7 @@
 
 Итак, новый dbt-проект инициирован, осталось добавить ему packages (меня интересует etlcraft).
 
-## Шаг 2. dbt - profiles.yml
+## Шаг 2. dbt_project.yml ↔ .dbt/profiles.yml
 
 В проекте в файле dbt_project.yml есть профиль: строка 
 
@@ -117,5 +117,8 @@
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/07_profile.png)
 
+## Шаг 3. dbt_packages
 
+Теперь установим packages. Для этого надо на том же уровне, где находится dbt_project.yml, создать ещё один файл - packages.yml. В нём записываются packages, которые вы хотите использовать. Выглядит это, например, вот так:
     
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/08_packages.png)
