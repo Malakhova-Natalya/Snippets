@@ -147,4 +147,5 @@
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/09_etlcraft.png)
 
+Хотя я указывала только etlcraft, у меня появились ещё dbt_utils и dbt_unittest, потому что они вызываются внутри etlcraft и указаны в его packages-файле.
 
