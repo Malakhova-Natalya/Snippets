@@ -85,7 +85,7 @@
 
 Итак, новый dbt-проект инициирован, осталось добавить ему packages (меня интересует etlcraft).
 
-## Шаг 2. dbt - profiles.yml
+## Шаг 2. dbt_project.yml ↔ .dbt/profiles.yml
 
 В проекте в файле dbt_project.yml есть профиль: строка 
 
@@ -117,5 +117,30 @@
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/07_profile.png)
 
+## Шаг 3. packages
 
+Теперь установим packages. Для этого надо на том же уровне, где находится dbt_project.yml, создать ещё один файл - packages.yml. В нём записываются packages, которые вы хотите использовать. Выглядит это, например, вот так:
     
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/08_packages.png)
+
+Список доступных packages можно посмотреть на [Package hub](https://hub.getdbt.com/).
+
+Таким образом можно скачать известные packages. Например, можно установить такие:
+    
+    packages:
+      - package: dbt-labs/dbt_utils
+        version: 1.1.1
+      - package: yu-iskw/dbt_unittest
+        version: 0.3.3    
+
+А что, если вы хотите использовать свою разработку? Можно действовать через git:
+
+    packages:
+      - git: "https://github.com/adventum/dbt-etlcraft.git" 
+        revision: v1.0 
+
+После того, как заполнили файл packages.yml,  убеждаемся, что находимся по адресу своего проекта (в моём примере это dbt-tutorial/my_dbt_project - папка, сразу внутри которой лежит файл packages.yml) и вызываем команду
+
+    dbt deps
+
+Указанные packages скачаются в папку dbt_packages (надо немного подождать, и содержимое появится). По умолчанию, кстати, эта папка, также как и target, logs - находится в зоне .gitignore.
