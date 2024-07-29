@@ -122,3 +122,5 @@
 Теперь установим packages. Для этого надо на том же уровне, где находится dbt_project.yml, создать ещё один файл - packages.yml. В нём записываются packages, которые вы хотите использовать. Выглядит это, например, вот так:
     
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/08_packages.png)
+
+Список доступных packages можно посмотреть на [Package hub](https://hub.getdbt.com/).
