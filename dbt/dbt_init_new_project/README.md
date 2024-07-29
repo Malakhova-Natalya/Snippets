@@ -143,4 +143,8 @@
 
     dbt deps
 
-Указанные packages скачаются в папку dbt_packages (надо немного подождать, и содержимое появится). По умолчанию, кстати, эта папка, также как и target, logs - находится в зоне .gitignore.
+Указанные packages скачаются в папку dbt_packages (надо немного подождать, может быть, 1-2 минуты, и содержимое появится).
+
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/09_etlcraft.png)
+
+
