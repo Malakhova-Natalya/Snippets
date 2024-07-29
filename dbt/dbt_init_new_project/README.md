@@ -117,7 +117,7 @@
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_init_new_project/07_profile.png)
 
-## Шаг 3. dbt_packages
+## Шаг 3. packages
 
 Теперь установим packages. Для этого надо на том же уровне, где находится dbt_project.yml, создать ещё один файл - packages.yml. В нём записываются packages, которые вы хотите использовать. Выглядит это, например, вот так:
     
