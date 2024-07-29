@@ -86,3 +86,26 @@
 Итак, новый dbt-проект инициирован, осталось добавить ему packages (меня интересует etlcraft).
 
 ## Шаг 2. dbt - profiles.yml
+
+В проекте в файле dbt_project.yml есть профиль: строка 
+
+    profile: 'my_dbt_project'
+    
+У меня она автоматически заполнена как 'my_dbt_project' из-за названия проекта при инициализации. 
+
+    # Name your project! Project names should contain only lowercase characters
+    # and underscores. A good package name should reflect your organization's
+    # name or the intended use of these models
+    name: 'my_dbt_project'
+    version: '1.0.0'
+    config-version: 2
+    
+    # This setting configures which "profile" dbt uses for this project.
+    profile: 'my_dbt_project'
+        
+Но вообще-то значение профиля надо привести в соответствие с файлом, расположенным в папке .dbt (например у меня она находится по адресу "\\wsl.localhost\Ubuntu-22.04\home\natalia\.dbt").
+Если в соответствие профиль не привести, то при поытке запуска будет ошибка 
+
+    ERROR: Runtime Error
+      Could not find profile named 'my_dbt_project'
+
