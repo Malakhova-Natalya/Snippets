@@ -1,6 +1,10 @@
 # Snippets
 Учебные/рабочие задачи, ситуации и пошаговые подходы к их решению
 
+## Airflow
+
+**Как установить Airflow локально**: [инструкция](https://github.com/Malakhova-Natalya/Snippets/blob/main/airflow/README.md)
+
 ### ClickHouse
 
 **ClickHouse - на ходу отобрать колонки по условию**: [COLUMNS('regexp')](https://github.com/Malakhova-Natalya/Snippets/blob/main/clickhouse/clickhouse_columns_regexp/README.md) 
