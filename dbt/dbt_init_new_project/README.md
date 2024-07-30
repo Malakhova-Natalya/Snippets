@@ -1,5 +1,11 @@
 # Как создать новый dbt-проект
 
+Создать новый проект можно в 3 шага:
+
+1. Создание и клонирование репозитория на github + инициализация dbt-проекта с помощью dbt init
+2. Приведение в соответствие профиля 
+3. Скачивание packages
+
 ## Шаг 1. git clone + dbt init
 Документация dbt: 
 - [Quickstart for dbt Core from a manual install](https://docs.getdbt.com/guides/manual-install?step=1)
