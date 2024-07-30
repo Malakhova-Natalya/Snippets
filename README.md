@@ -3,7 +3,7 @@
 
 ## Airflow
 
-**Как установить Airflow локально**: [инструкция](https://github.com/Malakhova-Natalya/Snippets/blob/main/airflow/README.md)
+**Как установить Airflow локально**: [инструкция от коллеги](https://github.com/Malakhova-Natalya/Snippets/blob/main/airflow/README.md)
 
 ### ClickHouse
 
