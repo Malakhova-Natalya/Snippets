@@ -85,7 +85,7 @@
 
 Итак, новый dbt-проект инициирован, осталось добавить ему packages (меня интересует etlcraft).
 
-## Шаг 2. dbt_project.yml ↔ .dbt/profiles.yml
+## Шаг 2. profiles
 
 В проекте в файле dbt_project.yml есть профиль: строка 
 
@@ -103,7 +103,7 @@
     # This setting configures which "profile" dbt uses for this project.
     profile: 'my_dbt_project'
         
-Но вообще-то значение профиля надо привести в соответствие с файлом, расположенным в папке .dbt (например у меня она находится по адресу "\\wsl.localhost\Ubuntu-22.04\home\natalia\.dbt").
+Но вообще-то **значение профиля в dbt_project.yml надо привести в соответствие с файлом, расположенным в папке .dbt** (например у меня она находится по адресу "\\wsl.localhost\Ubuntu-22.04\home\natalia\.dbt").
 Если в соответствие профиль не привести, то при попытке запуска будет ошибка 
 
     ERROR: Runtime Error
