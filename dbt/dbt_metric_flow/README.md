@@ -28,6 +28,8 @@
 
     Could not find adapter type clickhouse!
 
+Действительно, для Clickhouse пока адаптера нет, попробуем ради metricflow действовать через Postgres.
+
 ## шаг 2. Postgres
 
 **1.** Поднимаем Postgres в Docker через Docker Desktop по аналогии с разбором [здесь](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/docker_desktop/README.md)
