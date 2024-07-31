@@ -1,5 +1,6 @@
-## Docker Desktop
+# Docker Desktop
 
+## ClickHouse
 Как запустить контейнер из Docker Desktop - пример для локального ClickHouse 
 
 1. Открываем Docker Desktop. На самом верху в полоске поиска (Search ... ) пишем интересующее название, например, clickhouse-server.
@@ -10,3 +11,10 @@
 6. В этом окне нажимаем Optional Settings и заполняем имя будущего будущего контейнера и указываем порт 8123 для первой строки (:8123/tcp)
 7. После окончания настройки в разделе Containers появится новый контейнер (с именем, которое указали) и в разделе Port(s) будет 8123:8123
 8. Значит, при переходе в DBeaver → База данных → Новое подключение - нужно будет выбрать ClickHouse и подключение localhost пройдёт успешно.
+
+## Postgres
+
+По аналогии можно установить Postgres. Что отличается: здесь нужно обязательно в переменной указывать POSTGRES_PASSWORD и заполнять непустым значением, иначе будет ошибка.
+
+![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/docker_desktop/docker_desktop_postgres.png)
+
