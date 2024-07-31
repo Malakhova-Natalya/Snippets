@@ -33,6 +33,8 @@
 
 - **как добавить exposures в документацию**: [разбор](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt/dbt_exposures)
 
+- **как наладить использование metric flow**: разбор ✍️
+
 - **как запускать parse, compile, run с --var**: [разбор ошибки Unable to do partial parsing](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt/dbt_parse_compile_run_with_vars)
 
 ### GitHub
