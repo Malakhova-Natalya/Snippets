@@ -36,7 +36,7 @@
 
 Порт автоматически заполняется как 5432 + задаём имя контейнеру + обязательно в переменных указываем
 
-        POSTGRES_PASSWORD
+    POSTGRES_PASSWORD
 
 с непустым значением (иначе будет ошибка и контейнер не будет создан).
 
@@ -44,27 +44,27 @@
 
 **2.** Что ещё понадобится для работы с postgres? Точно нужно установить:
 
-        pip install dbt-postgres
+    pip install dbt-postgres
 
 Возможно, ещё понадобится:
 
-        python -m pip install "dbt-metricflow[postgres]"
+    python -m pip install "dbt-metricflow[postgres]"
 
 **3.** Нужно прописать в .dbt/profiles.yml профиль для подключения к БД postgres. Например, у меня это:
 
-        dbt_local_postgres:
-          target: dev
-          outputs:
-            dev:
-              type: postgres
-              host: localhost
-              user: postgres
-              password: 'ваше непустое значение пароля как string'
-              port: 5432
-              dbname: postgres 
-              schema: public
-              threads: 4
+    dbt_local_postgres:
+      target: dev
+      outputs:
+        dev:
+          type: postgres
+          host: localhost
+          user: postgres
+          password: '12345'
+          port: 5432
+          dbname: postgres 
+          schema: public
+          threads: 4
 
 И этот профиль (в моём случае dbt_local_postgres) нужно заполнить в файле dbt_project.yml - 10-я строка:
 
-        profile: 'dbt_local_postgres'
+    profile: 'dbt_local_postgres'
