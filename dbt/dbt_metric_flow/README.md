@@ -9,14 +9,14 @@
 
 Пытаюсь установить:
 
-  pip install dbt-metricflow
+    pip install dbt-metricflow
   
 получаю ошибку 
 
-  [Errno 13] Permission denied: '/home/natalia/.venv/lib/python3.10/site-packages/text_unidecode'
-  Check the permissions.
+    [Errno 13] Permission denied: '/home/natalia/.venv/lib/python3.10/site-packages/text_unidecode'
+    Check the permissions.
 
 Использую ранее разобранный [здесь](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/README.md) подход:
 
-   sudo chmod <три цифры уровня доступа> -R /home/natalia/<название папки>
+     sudo chmod <три цифры уровня доступа> -R /home/natalia/<название папки>
 
