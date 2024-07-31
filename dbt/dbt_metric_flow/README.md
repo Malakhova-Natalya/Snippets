@@ -20,3 +20,11 @@
 
      sudo chmod <три цифры уровня доступа> -R /home/natalia/<название папки>
 
+В конце концов metricflow устанавливается успешно. Но команда
+
+        mf tutorial
+
+не работает, выдаёт длинную ошибку, суть которой в следующем:
+
+        Could not find adapter type clickhouse!
+
