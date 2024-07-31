@@ -5,7 +5,9 @@
 - GitHub - dbt-labs/metricflow: [здесь](https://github.com/dbt-labs/metricflow)
 - нашла [ветку для ClickHouse](https://github.com/kolatr-dev/metricflow/tree/feature/support-clickhouse) в [этом обсуждении](https://discourse.getdbt.com/t/metricflow-with-clickhouse-adapter/12857)
 
-пытаюсь установить
+## шаг 1. pip install dbt-metricflow
+
+Пытаюсь установить:
 
   pip install dbt-metricflow
   
@@ -14,6 +16,7 @@
   [Errno 13] Permission denied: '/home/natalia/.venv/lib/python3.10/site-packages/text_unidecode'
   Check the permissions.
 
-     sudo chmod 777 -R /home/natalia/.venv/lib/python3.10/site-packages/text_unidecode
+Использую ранее разобранный [здесь](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/start_dbt_project_from_github/README.md) подход:
 
-    sudo chmod 777 -R /home/natalia/.venv/bin
+   sudo chmod <три цифры уровня доступа> -R /home/natalia/<название папки>
+
