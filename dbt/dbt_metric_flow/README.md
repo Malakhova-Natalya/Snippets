@@ -28,3 +28,5 @@
 
     Could not find adapter type clickhouse!
 
+## шаг 2. Postgres
+
