@@ -14,4 +14,6 @@
   [Errno 13] Permission denied: '/home/natalia/.venv/lib/python3.10/site-packages/text_unidecode'
   Check the permissions.
 
-  
+     sudo chmod 777 -R /home/natalia/.venv/lib/python3.10/site-packages/text_unidecode
+
+    sudo chmod 777 -R /home/natalia/.venv/bin
