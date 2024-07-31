@@ -30,7 +30,7 @@
 
 ## шаг 2. Postgres
 
-Поднимаем Postgres в Docker через Docker Desktop по аналогии с разбором [здесь](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/docker_desktop/README.md)
+**1.** Поднимаем Postgres в Docker через Docker Desktop по аналогии с разбором [здесь](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/docker_desktop/README.md)
 
 Порт автоматически заполняется как 5432 + задаём имя контейнеру + обязательно в переменных указываем
 
@@ -38,7 +38,31 @@
 
 с непустым значением (иначе будет ошибка и контейнер не будет создан).
 
-Далее можно сделать новое соединение с БД в DBeaver → База данных → Новое подключение - PostreSQL: localhost, не забываем указать значение пароля, заданное шагом ранее.
+Далее можно сделать новое соединение с БД в DBeaver → База данных → Новое подключение - PostreSQL: localhost, внимание - **пользователь - postgres**, пароль -  непустое значение, заданное шагом ранее.
 
+**2.** Что ещё понадобится для работы с postgres? Точно нужно установить:
 
+        pip install dbt-postgres
 
+Возможно, ещё понадобится:
+
+        python -m pip install "dbt-metricflow[postgres]"
+
+**3.** Нужно прописать в .dbt/profiles.yml профиль для подключения к БД postgres. Например, у меня это:
+
+        dbt_local_postgres:
+          target: dev
+          outputs:
+            dev:
+              type: postgres
+              host: localhost
+              user: postgres
+              password: 'ваше непустое значение пароля как string'
+              port: 5432
+              dbname: postgres 
+              schema: public
+              threads: 4
+
+И этот профиль (в моём случае dbt_local_postgres) нужно заполнить в файле dbt_project.yml - 10-я строка:
+
+        profile: 'dbt_local_postgres'
