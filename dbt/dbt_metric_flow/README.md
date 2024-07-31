@@ -22,9 +22,9 @@
 
 В конце концов metricflow устанавливается успешно. Но команда
 
-        mf tutorial
+    mf tutorial
 
 не работает, выдаёт длинную ошибку, суть которой в следующем:
 
-        Could not find adapter type clickhouse!
+    Could not find adapter type clickhouse!
 
