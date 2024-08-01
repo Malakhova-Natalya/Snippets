@@ -3,6 +3,9 @@
 ## seeds
 
 Внутри папки seeds создаём подпапку или сразу пишем файл. Назвать файл можно любым именем, формат - yml.
+
+Например, seeds/project_seeds.yml
+
 Документация: [здесь](https://docs.getdbt.com/reference/seed-properties)
 
 Пример из документации:
