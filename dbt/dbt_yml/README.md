@@ -64,7 +64,26 @@
     
       - name: ... # declare properties of additional macros
 
+На примере макроса:
 
+    {% macro cents_to_dollars(column_name, scale=2) %}
+        ({{ column_name }} / 100)::numeric(16, {{ scale }})
+    {% endmacro %}
+
+Будет такой yml_файл:
+
+    version: 2
+    
+    macros:
+      - name: cents_to_dollars
+        arguments:
+          - name: column_name
+            type: column name or expression
+            description: "The name of a column, or an expression — anything that can be `select`-ed as a column"
+    
+          - name: scale
+            type: integer
+            description: "The number of decimal places to round to. Default is 2."
 
 
 ## sources, models, exposures
