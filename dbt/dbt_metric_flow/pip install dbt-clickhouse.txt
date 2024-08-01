@@ -1,0 +1,82 @@
+Я пыталась установить MetricFlow, и его нет для ClickHouse, поэтому я подняла локально Postgres в Docker и пыталась работать через него. Для этого я завела профиль - локально в .dbt/profiles.yml
+
+частично продвинулась по этому направлению (Postgres есть, работает, подключилась в DBeaver)
+
+на следующий день утром надо было по работе перезапустить один источник.
+
+Захожу я на рабочую папку, делаю dbt run нужного направления и... меня встречают ошибки.
+Такого рода:  Could not find adapter type clickhouse!
+
+А эти ошибки вылезали при установке MetricFlow. И если перейти на Postgres, вроде они были не актуальны. Но работа-то у меня на ClickHouse!
+
+Я думаю, пора тогда этот эксперимент с MetricFlow и Postgres оставить за бортом. Никакой команды, как его (MetricFlow) убрать, не нашла. Но по памяти полезла искать в папки, куда он вчера устанавливался. Нашла:
+
+home/natalia/.venv/lib/python3.10/site-packages/
+
+и далее несколько папок, где в названии было metricflow, например они начинались с dbt-metricflow или просто с metricflow. Удалила их вручную. Думаю, теперь  то, что требовало адаптера для Clickhouse ушло, и проблема уйдет.
+
+Нет)
+
+Долго ли, коротко ли, решить проблему всё же удалось - в какой-то момент, мне, правда, показалось, что я поседею :'-) 
+
+Ещё раз зафиксируем ошибки, какие они были при dbt run: 
+
+
+(.venv) natalia@LAPTOP-LS5NHPQR:~/datacraft-master/nationalpriority/etlcraft$ dbt run -m models/1_silos/1_normalize/sheets/+
+07:08:54  Running with dbt=1.8.4
+07:08:54  Error importing adapter: No module named 'dbt.adapters.clickhouse'
+07:08:54  Encountered an error:
+Runtime Error
+  Credentials in profile "priority", target "dev" invalid: Runtime Error
+    Could not find adapter type clickhouse!
+-----------------------------------------------------------------
+и при dbt debug (тут смысл такой же, просто вся информация более детальная):
+
+(.venv) natalia@LAPTOP-LS5NHPQR:~/datacraft-master/nationalpriority/etlcraft$ dbt debug
+07:45:18  Running with dbt=1.8.4
+07:45:18  dbt version: 1.8.4
+07:45:18  python version: 3.10.12
+07:45:18  python path: /home/natalia/.venv/bin/python3
+07:45:18  os info: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+07:45:18  Error importing adapter: No module named 'dbt.adapters.clickhouse'
+07:45:18  Using profiles dir at /home/natalia/datacraft-master/nationalpriority/etlcraft
+07:45:18  Using profiles.yml file at /home/natalia/datacraft-master/nationalpriority/etlcraft/profiles.yml
+07:45:18  Using dbt_project.yml file at /home/natalia/datacraft-master/nationalpriority/etlcraft/dbt_project.yml
+07:45:18  Configuration:
+07:45:18    profiles.yml file [ERROR invalid]
+07:45:18    dbt_project.yml file [OK found and valid]
+07:45:18  Required dependencies:
+07:45:18   - git [OK found]
+
+07:45:18  Connection test skipped since no profile was found
+07:45:18  1 check failed:
+07:45:18  Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "priority", target "dev" invalid: Runtime Error
+    Could not find adapter type clickhouse!
+
+-----------------------------------------------------------------
+
+я пыталась:
+
+pip install --upgrade dbt-core
+
+удалила вообще свой локальный postgres-профиль (вот он, сохраняю его здесь):
+# example profiles.yml file
+#dbt_local_postgres:
+  #target: dev
+  #outputs:
+    #dev:
+      #type: postgres
+      #host: localhost
+      #user: postgres
+      #password: '12345'
+      #port: 5432
+      #dbname: postgres 
+      #schema: public
+      #threads: 4
+
+В конце концов мне помогло:
+
+pip install dbt-clickhouse
+
