@@ -60,7 +60,7 @@
           type: postgres
           host: localhost
           user: postgres
-          password: '12345'
+          password: '<не повешу пароль на гитхаб:-)>'
           port: 5432
           dbname: postgres 
           schema: public
