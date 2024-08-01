@@ -2,7 +2,7 @@
 
 ## seeds
 
-Внутри папки seeds создаём подпапку или сразу пишем файл. Назвать файл можно любым именем, формат - yml. Например, 
+**Внутри папки seeds** создаём подпапку или сразу пишем файл. Назвать файл можно любым именем, формат - yml. Например, 
 
     integration_tests/seeds/project_seeds.yml
 
@@ -39,7 +39,7 @@
       -   
 ## macros
 
-Внутри папки macros создаём подпапку или сразу пишем файл. Назвать файл можно любым именем, формат - yml. Например, 
+**Внутри папки macros** создаём подпапку или сразу пишем файл. Назвать файл можно любым именем, формат - yml. Например, 
 
     integration_tests/macros/project_macros.yml
     
@@ -65,10 +65,73 @@
 
 
 
-## sources
+## sources, models, exposures
 
-## models
+**Внутри папки models** создаём подпапку или сразу пишем файл. Назвать файл можно любым именем, формат - yml. Например, 
 
-## exposures
+    integration_tests/models/project_properties.yml
 
-exposures отдельно разбирала [здесь](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt/dbt_exposures)
+Документация: [здесь](https://docs.getdbt.com/reference/configs-and-properties#which-properties-are-not-also-configs)
+
+Пример из документации:
+
+    version: 2
+    
+    sources:
+      - name: raw_jaffle_shop
+        description: A replica of the postgres database used to power the jaffle_shop app.
+        tables:
+          - name: customers
+            columns:
+              - name: id
+                description: Primary key of the table
+                tests:
+                  - unique
+                  - not_null
+    
+          - name: orders
+            columns:
+              - name: id
+                description: Primary key of the table
+                tests:
+                  - unique
+                  - not_null
+    
+              - name: user_id
+                description: Foreign key to customers
+    
+              - name: status
+                tests:
+                  - accepted_values:
+                      values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
+    
+    
+    models:
+      - name: stg_jaffle_shop__customers
+        config:
+          tags: ['pii']
+        columns:
+          - name: customer_id
+            tests:
+              - unique
+              - not_null
+    
+      - name: stg_jaffle_shop__orders
+        config:
+          materialized: view
+        columns:
+          - name: order_id
+            tests:
+              - unique
+              - not_null
+          - name: status
+            tests:
+              - accepted_values:
+                  values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
+                  config:
+                    severity: warn
+    
+
+
+
+**P.S.** exposures отдельно разбирала [здесь](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt/dbt_exposures)
