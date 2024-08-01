@@ -70,7 +70,7 @@ pip install --upgrade dbt-core
       #type: postgres
       #host: localhost
       #user: postgres
-      #password: '12345'
+      #password: 'не скажу'
       #port: 5432
       #dbname: postgres 
       #schema: public
