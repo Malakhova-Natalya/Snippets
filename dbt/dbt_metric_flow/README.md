@@ -5,6 +5,7 @@
 - GitHub - dbt-labs/metricflow: [здесь](https://github.com/dbt-labs/metricflow)
 - нашла [ветку для ClickHouse](https://github.com/kolatr-dev/metricflow/tree/feature/support-clickhouse) в [этом обсуждении](https://discourse.getdbt.com/t/metricflow-with-clickhouse-adapter/12857)
 
+- о том, как столкнулась с проблемой после эксперимента с Postgres при переходе на рабочий проект на ClickHouse - [здесь](https://github.com/Malakhova-Natalya/Snippets/blob/main/dbt/dbt_metric_flow/pip%20install%20dbt-clickhouse.txt)
 ## шаг 1. pip install dbt-metricflow
 
 Пытаюсь установить:
