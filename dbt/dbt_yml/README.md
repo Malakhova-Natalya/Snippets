@@ -39,6 +39,32 @@
       -   
 ## macros
 
+Внутри папки macros создаём подпапку или сразу пишем файл. Назвать файл можно любым именем, формат - yml. Например, 
+
+    integration_tests/macros/project_macros.yml
+    
+Документация: [здесь](https://docs.getdbt.com/reference/macro-properties)
+
+Пример из документации:
+
+    version: 2
+    
+    macros:
+      - name: <macro name>
+        [description](/reference/resource-properties/description): <markdown_string>
+        [docs](/reference/resource-configs/docs):
+          show: true | false
+        arguments:
+          - name: <arg name>
+            [type](/reference/resource-properties/argument-type): <string>
+            [description](/reference/resource-properties/description): <markdown_string>
+          - ... # declare properties of additional arguments
+    
+      - name: ... # declare properties of additional macros
+
+
+
+
 ## sources
 
 ## models
