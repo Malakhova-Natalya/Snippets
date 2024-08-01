@@ -52,6 +52,37 @@
     
       - name: ... # declare properties of additional seeds
       -   
+
+Работающий пример:
+
+    version: 2
+    
+    seeds:
+      - name: datacraft_clientname_raw__stream_adjust_default_accountid_cohorts
+        description: adjust_default_accountid_cohorts
+        docs:
+          show: true 
+          node_color: "#873a39" 
+    
+        columns:
+          - name: _airbyte_raw_id
+            description: техническое поле Airbyte - id строки
+            quote: true 
+            tags: ['adjust']
+    
+          - name: _airbyte_data 
+            description: поле с данными, все колонки внутри одной json-строки
+            quote: true 
+            tags: ['adjust']
+    
+          - name: _airbyte_extracted_at 
+            description: техническое поле Airbyte - время получения данных
+            quote: true 
+            tags: ['adjust']
+    
+    #  - name: ... # declare properties of additional seeds
+
+
 ## macros
 
 **Внутри папки macros** создаём подпапку или сразу пишем файл. Назвать файл можно любым именем, формат - yml. Например, 
