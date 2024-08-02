@@ -80,6 +80,7 @@
         +docs:
           node_color: "#000000"
 
+Ещё можно задавать yml-файлы более точечно. Рассмотрим далее примеры для отдельны направлений: seeds, macros, sources, models, exposures.
 
 ## seeds
 
