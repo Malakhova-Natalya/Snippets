@@ -6,13 +6,7 @@
 
 Палитры и их код можно смотреть [здесь](https://www.color-hex.com/color-palettes/)
 
-Например, возьму такие цвета:  https://www.color-hex.com/color-palette/1048952
-
-- #873a39	seeds
-- #804c48	sources
-- #cc6666	macros
-- #c3a59f   models
-- #c7bace	exposures
+Например, возьму такие цвета:  "Коричневые тона" [отсюда](https://colorscheme.ru/html-colors.html)
 
 
 ## seeds
