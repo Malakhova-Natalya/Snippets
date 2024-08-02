@@ -8,6 +8,78 @@
 
 Например, возьму такие цвета:  "Коричневые тона" [отсюда](https://colorscheme.ru/html-colors.html)
 
+## dbt_project
+
+Это главный yml-файл, здесь можно задать обобщенные параметры, например, для целых папок. Вот пример, как можно задать разные цвета моделям в зависимости от их папок:
+
+
+    # Name your project! Project names should contain only lowercase characters
+    # and underscores. A good package name should reflect your organization's
+    # name or the intended use of these models
+    name: 'YOUR_PROJECT_NAME'
+    version: '1.0.0'
+    config-version: 2
+    
+    # This setting configures which "profile" dbt uses for this project.
+    profile: 'YOUR_PROFILE'
+    
+    # These configurations specify where dbt should look for different types of files.
+    # The `model-paths` config, for example, states that models in this project can be
+    # found in the "models/" directory. You probably won't need to change these!
+    model-paths: ["models"]
+    analysis-paths: ["analyses"]
+    test-paths: ["tests"]
+    seed-paths: ["seeds"]
+    macro-paths: ["macros"]
+    snapshot-paths: ["snapshots"]
+    
+    target-path: "target"  # directory which will store compiled SQL files
+    clean-targets:         # directories to be removed by `dbt clean`
+      - "target"
+      - "dbt_packages"
+
+    name: YOUR_PROJECT_NAME
+    
+    models:
+      YOUR_PROJECT_NAME:
+        1_silos:
+          1_normalize:
+            +docs:
+              node_color: "#800000"
+          2_incremental:
+            +docs:
+              node_color: "#A52A2A"
+        2_staging:
+          1_join:
+            +docs:
+              node_color: "#A0522D"
+          2_combine:
+            +docs:
+              node_color: "#D2691E"
+          3_hash:
+            +docs:
+              node_color: "#CD853F"
+        3_raw:
+          +docs:
+            node_color: "#B8860B"
+        4_graph:
+          +docs:
+            node_color: "#DAA520"    
+        5_full:
+          +docs:
+            node_color: "#F4A460"    
+        6_attribution:
+          +docs:
+            node_color: "#BC8F8F"    
+        7_dataset:  
+          +docs:
+            node_color: "#F5DEB3"        
+        
+    seeds:
+      YOUR_PROJECT_NAME:
+        +docs:
+          node_color: "#000000"
+
 
 ## seeds
 
