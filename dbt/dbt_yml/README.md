@@ -214,3 +214,5 @@
 
 
 **P.S.** exposures отдельно разбирала [здесь](https://github.com/Malakhova-Natalya/Snippets/tree/main/dbt/dbt_exposures)
+
+P.P.S интересности можно посмотреть [здесь](https://t.me/data_apps/399)
