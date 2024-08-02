@@ -55,23 +55,6 @@
     
 Документация: [здесь](https://docs.getdbt.com/reference/macro-properties)
 
-Пример из документации:
-
-    version: 2
-    
-    macros:
-      - name: <macro name>
-        [description](/reference/resource-properties/description): <markdown_string>
-        [docs](/reference/resource-configs/docs):
-          show: true | false
-        arguments:
-          - name: <arg name>
-            [type](/reference/resource-properties/argument-type): <string>
-            [description](/reference/resource-properties/description): <markdown_string>
-          - ... # declare properties of additional arguments
-    
-      - name: ... # declare properties of additional macros
-
 На примере макроса:
 
     {% macro cents_to_dollars(column_name, scale=2) %}
