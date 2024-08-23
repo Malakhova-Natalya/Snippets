@@ -18,3 +18,4 @@
 
 ![cover](https://github.com/Malakhova-Natalya/Snippets/blob/main/other/docker_desktop/docker_desktop_postgres.png)
 
+Можно указать сразу имя POSTGRES_DB.
